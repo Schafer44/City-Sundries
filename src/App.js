@@ -16,7 +16,6 @@ render(){
       <Router>
       <Navbar/>
         <Switch>
-    
           <Route path="/history">
             <History />
           </Route>
