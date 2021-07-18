@@ -3,7 +3,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {History} from "./Pages/History.jsx";
-import {Navbar} from "./Pages/Navbar";
+import Navbar from "./Pages/Navbar";
 import {Home} from "./Pages/Home";
 import {Menu} from "./Pages/Menu";
 

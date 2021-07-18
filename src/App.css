@@ -57,11 +57,12 @@ display: flex;
   z-index: 2;
   background-color:#A8D2C8;
   width:101%;
-  box-shadow: black 0px .2rem .4rem .5rem;
   border-color: #A8D2C8;
   height: 4.1rem;
 }
-
+.navLogo{
+  margin-left:10px ;
+}
 .NavbarButtons{
   text-decoration:pink;
   border: none;

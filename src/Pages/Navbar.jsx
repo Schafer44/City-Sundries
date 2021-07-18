@@ -5,28 +5,17 @@ import Logo from './Pictures/Logo.jpeg';
 import HistoryButton from './Pictures/History.jpeg';
 import HomeButton from './Pictures/Home.jpeg';
 import MenuButton from './Pictures/Menu.jpeg';
+import {Spring,animated} from 'react-spring';
 
-export class Navbar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { width: 0, height: 0 ,isMobile:false};
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    }
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-      
-    updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }
-    
-    render() {
+export default function Navbar() {
         return (
-            <>
+            <Spring
+             from={{opacity:1,marginLeft:-8000}}
+             to={{opacity:1,marginLeft:0}}
+             config={{mass:10, friction:100}}
+             >
+                {props => (
+                     <animated.div style={props}>
                 <nav className = 'Navbar'>
                     <ul class='navbar-nav'>
                     <img class= "navLogo" z-index="2" src={Logo}/>
@@ -41,7 +30,9 @@ export class Navbar extends React.Component {
                     </div>
                     </ul>
                 </nav>
-            </>
+                </animated.div>
+                    )
+                    } 
+                    </Spring>
         );
-    }
-}
+    } 
