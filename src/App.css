@@ -156,7 +156,7 @@ grid-area: main;
 
 @media only screen and (min-width:600px){
   .NavbarButtons{
-    margin-left: 1.5vw;
+    margin-left: 15vw;
     width: 25vw;
     margin-bottom: 4x;
   }
@@ -196,7 +196,7 @@ grid-area: main;
 }
 @media only screen and (max-width:600px){
   .NavbarButtons{
-    margin-left: 16vw;
+    margin-left: 20vw;
     width: 10vw;
   }
   .Navbar{

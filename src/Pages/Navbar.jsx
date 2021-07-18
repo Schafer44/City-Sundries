@@ -29,16 +29,16 @@ export class Navbar extends React.Component {
             <>
                 <nav className = 'Navbar'>
                     <ul class='navbar-nav'>
-                    <img z-index="2" src={Logo}/>
-                    <Button className="NavbarButtons" type="primary" shape="round">
+                    <img class= "navLogo" z-index="2" src={Logo}/>
+                    <div class="NavbarButtons">
                         <Link to={''} className="link" ><img src={HomeButton}/> </Link>
-                    </Button>
-                    <Button className="NavbarButtons" type="primary" shape="round">
+                    </div>
+                    <div class="NavbarButtons">
                         <Link to={'menu'}className="link"><img src={MenuButton}/></Link> 
-                    </Button>
-                    <Button className="NavbarButtons" type="primary" shape="round">
+                    </div>
+                    <div class="NavbarButtons" >
                         <Link to={'history'}className="link"><img src={HistoryButton}/></Link>
-                    </Button>
+                    </div>
                     </ul>
                 </nav>
             </>
