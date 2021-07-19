@@ -1,4 +1,4 @@
-import { Button } from "antd";
+
 import React from "react";
 import { Link} from 'react-router-dom';
 import Logo from './Pictures/Logo.jpeg';
@@ -16,18 +16,12 @@ export default function Navbar() {
              >
                 {props => (
                      <animated.div style={props}>
-                <nav className = 'Navbar'>
+                <nav class = 'Navbar'>
                     <ul class='navbar-nav'>
                     <img class= "navLogo" z-index="2" src={Logo}/>
-                    <div class="NavbarButtons">
-                        <Link to={''} className="link" ><img src={HomeButton}/> </Link>
-                    </div>
-                    <div class="NavbarButtons">
-                        <Link to={'menu'}className="link"><img src={MenuButton}/></Link> 
-                    </div>
-                    <div class="NavbarButtons" >
-                        <Link to={'history'}className="link"><img src={HistoryButton}/></Link>
-                    </div>
+                    <Link to={''} class="link" ><img src={HomeButton}/> </Link>
+                    <Link to={'menu'}class="link"><img src={MenuButton}/></Link> 
+                    <Link to={'history'}class="link"><img src={HistoryButton}/></Link>
                     </ul>
                 </nav>
                 </animated.div>

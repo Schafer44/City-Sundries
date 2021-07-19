@@ -40,6 +40,7 @@ list-style: none;
 padding:0;
 margin: 0;
 display: flex;
+position: relative;
 }
 .black {
   display: block;
@@ -53,36 +54,34 @@ display: flex;
 }
 
 .Navbar{
-  position: sticky; 
-  z-index: 2;
+  position: fixed; 
+  z-index: 7;
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
   height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
 }
 .navLogo{
   margin-left:10px ;
 }
 .NavbarButtons{
-  text-decoration:pink;
-  border: none;
-  color: black;
+  position: sticky; 
   align-content: center;
   background-color: #A8D2C8;
   cursor: pointer; 
   display: inline-block;
 }
 .link{
+  position: relative;
   text-decoration: none;
   text-overflow:ellipsis;
+  display: flex;
 }
 .link:visited { text-decoration: none; color: #000;}
 .link:hover { text-decoration: none; }
 .link:focus { text-decoration: none; }
 .link:hover, .link:active { text-decoration: none; }
-.NavbarButtons:hover {
-  text-decoration: none;
- }
 
 li{
   display: inline-block
@@ -143,7 +142,6 @@ grid-area: main;
 }
 .mainGrid{
   margin: 10px;
-  margin: 15px;
   border-radius:20px;
   display: grid;
   gap: 1rem;
@@ -161,8 +159,10 @@ grid-area: main;
     width: 25vw;
     margin-bottom: 4x;
   }
-  .Navbar{
-    top:0;
+  .link{
+    margin-left: 15vw;
+    width: 25vw;
+    margin-bottom: 4x;
   }
 .imgLeft{
   width: 100%;
@@ -200,10 +200,10 @@ grid-area: main;
     margin-left: 20vw;
     width: 10vw;
   }
-  .Navbar{
-    top:0;
+  .link{
+    margin-left: 20vw;
+    width: 10vw;
   }
-  
 .imgLeft{
   width: 100%;
   height: 100%;
