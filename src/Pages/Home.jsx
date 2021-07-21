@@ -4,6 +4,7 @@ import one from "./Pictures/1.jpeg";
 import two from "./Pictures/2.jpeg";
 import Logo from './Pictures/Logo.jpeg';
 import {Spring,animated} from 'react-spring';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 export class Home extends React.Component {
     constructor(props) {
@@ -53,7 +54,7 @@ export class Home extends React.Component {
                                         <div class='ItemMain'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
                                     </div>
                                 </div>
-                                <img src={Logo} class='imgRight'/>
+                                <img src={Logo} class='imgRight' alt=""/>
                                 <div class='textboxRight'>
                                     <div class='grid'>
                                         <p></p>
@@ -61,7 +62,7 @@ export class Home extends React.Component {
                                         <div class='ItemMain'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
                                     </div>
                                 </div>
-                                <img src={Logo} class='imgLeft'/>
+                                <img src={Logo} class='imgLeft' alt=""/>
                                 <div class='textboxLeftBottom'>
                                     <div class='grid'>
                                     <p></p>
@@ -69,7 +70,7 @@ export class Home extends React.Component {
                                         <div class='ItemMain'>104 N. Washington Street Marquette, Ks 67464</div>
                                     </div>
                                 </div>
-                                <img src={Logo} class='imgRightBottom' />
+                                <img src={Logo} class='imgRightBottom' alt=""/>
                             </div>
                         </animated.div>
                     ) 
