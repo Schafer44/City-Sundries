@@ -30,22 +30,37 @@ export class Home extends React.Component {
           ];
         return (
              <Spring
-             from={{opacity:1,marginTop:-1500}}
-             to={{opacity:1,marginTop:0}}
+             from={{marginTop:-100}}
+             to={{marginTop:0}}
              config={{mass:10, friction:100}}
              >
                 {props => (
                      <animated.div style={props}>
+                         
+                         <Parallax pages={2.45} style={{ top: '0', left: '0' }}>
+                         <ParallaxLayer offset={0} speed={.5} style={{ backgroundColor: '#ff6d6d' }} />
+                         <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                             <SimpleImageSlider
                             style={{ maxWidth:'99%',maxHeight:'66%'}}
                             width={this.state.width}
-                            height={this.state.height/1.5}
+                            height={this.state.height/1}
                             images={IMANGES}
                             showBullets={true}
                             />
                         </div>
-
+                        </ParallaxLayer>
+                        
+                        
+  <ParallaxLayer
+    offset={1}
+    speed={1}
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      color: 'white',
+    }}>
                             <div class='mainGrid'>
                                 <div class='textboxLeft'>
                                     <div class='grid'>
@@ -72,6 +87,8 @@ export class Home extends React.Component {
                                 </div>
                                 <img src={Logo} class='imgRightBottom' alt=""/>
                             </div>
+                            </ParallaxLayer>
+                            </Parallax>
                         </animated.div>
                     ) 
                 }
