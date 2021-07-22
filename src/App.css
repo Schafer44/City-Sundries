@@ -84,58 +84,72 @@ li{
   display: inline-block
 }
 .imgLeft{
-  position: static;
+  display: block;
   border-radius:20px;
-  background: black;
-  width: 50%;
-  height: 50%;
-  z-index: 0;
+  background: white;
+  float: left;
+  margin-left: 2%;
+  width: auto;
+  height: auto;
   top:50%;
-  transform:translate(-0%, -25%);
+  transform:translate(-0%, -50%);
+
 }
 .textboxLeft{
   border-radius:20px;
-  width: 50%;
-  height: 50%;
-  background: white;
-  grid-area: textboxLeft;
+  display: block;
+  background: black;
+  float: left;
+  width:547.5%; 
+  padding-bottom:47.5%;
+  top:50%;
+  margin-left: 2%;
+  height: 0;
+  
 }
 .textboxLeftBottom{
   border-radius:20px;
-  width: 50%;
-  height: 50%;
-  background: white;
-  grid-area: textboxLeftBottom;
+  display: block;
+  background: black;
+  float: left;
+  width:47.5%; 
+  margin-left: 2%;
+  padding-bottom:47.5%;
+  top:50%;
+  height: 0;
 }
 .imgRightBottom{
-  width: 50%;
-  height: 50%;
-  position: static;
+  display: block;
   border-radius:20px;
-  background: black;
-  grid-area: imgRightBottom;
-  z-index: 0;
+  background: white;
+  float: right;
+  width: auto;
+  margin-right: 2%;
+  height: auto;
   top:50%;
-  transform:translate(-0%, -25%);
+  transform:translate(-0%, -50%);
 }
 .textboxRight{
   border-radius:20px;
-  width: 50%;
-  height: 50%;
-  background: white;
-  grid-area: textboxRight;
+  display: block;
+  background: black;
+  float: right;
+  width:47.5%; 
+  margin-right: 2%;
+  padding-bottom:47.5%;
   top:50%;
-  transform:translate(-0%, -25%);
+  height: 0;
 }
 .imgRight{
   display: block;
   border-radius:20px;
   background: white;
   float: right;
+  margin-right: 2%;
   width: auto;
   height: auto;
   top:50%;
-  transform:translate(-0%, -25%);
+  transform:translate(-0%, -50%);
 }
 
 .itemHead{
@@ -179,21 +193,22 @@ grid-area: main;
     margin-bottom: 4x;
   }
 .imgLeft{
-  width: 50%;
-  height: 50%;
+  max-width: 47.5%;
 }
 .textboxLeft{
+  max-width: 47.5%;
 }
 .textboxLeftBottom{
+  max-width: 47.5%;
 }
 .imgRightBottom{
-  width: 50%;
-  height: 50%;
+  max-width: 47.5%;
 }
 .textboxRight{
+  max-width: 47.5%;
 }
 .imgRight{
-  max-width: 50%;
+  max-width: 47.5%;
 }
 }
 @media only screen and (max-width:600px){

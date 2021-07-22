@@ -9,6 +9,7 @@ export class History extends React.Component {
       <div/>
 
       <Parallax pages={5}>
+      <ParallaxLayer offset={0} speed={.5} style={{ backgroundColor: '#ff6d6d' }} />
         <ParallaxLayer offset={0} speed={0.5} style={{ ...alignCenter, justifyContent: 'center' }}>
           <p>Scroll down</p>
         </ParallaxLayer>

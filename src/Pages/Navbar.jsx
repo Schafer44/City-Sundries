@@ -10,7 +10,7 @@ import {Spring,animated} from 'react-spring';
 export default function Navbar() {
         return (
             <Spring
-             from={{opacity:1,marginLeft:-8000}}
+             from={{opacity:1,marginLeft:-80}}
              to={{opacity:1,marginLeft:0}}
              config={{mass:10, friction:100}}
              >
