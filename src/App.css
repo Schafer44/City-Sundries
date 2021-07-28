@@ -39,17 +39,27 @@ margin: 0;
 display: flex;
 position: relative;
 }
-.black {
+.blackBoard {
   display: block;
-  max-width:98%;
-  max-height:98%;
+  max-width:96%;
+  max-height:96%;
   width: auto;
   height: auto;
   top:50%;
   left:50%;
+  transform:translate(-50%, -45%);
+}
+.backBoard {
+  position: absolute;
+  display: block;
+  max-width:100%;
+  max-height:100%;
+  width: 100%;
+  height: 100%;
+  top:50%;
+  left:50%;
   transform:translate(-50%, -50%);
 }
-
 .Navbar{
   position: fixed; 
   z-index: 7;
@@ -94,6 +104,7 @@ li{
   top:50%;
   transform:translate(-0%, -50%);
   max-width: 47.5%;
+  margin-top: 2.5%;
 
 }
 .textboxLeft{
@@ -108,6 +119,7 @@ li{
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
+  margin-top: 5%;
   
 }
 .textboxLeftBottom{
@@ -116,6 +128,7 @@ li{
   background: black;
   float: left;
   width:47.5%; 
+  margin-top: 5%;
   margin-left: 2%;
   padding-bottom:47.5%;
   top:50%;
@@ -134,6 +147,7 @@ li{
   top:50%;
   transform:translate(-0%, -50%);
   max-width: 47.5%;
+  margin-top: 2.5%;
 }
 .textboxRight{
   border-radius:20px;
@@ -147,6 +161,7 @@ li{
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
+  margin-top: 5%;
 }
 .imgRight{
   display: block;
@@ -159,6 +174,7 @@ li{
   top:50%;
   transform:translate(-0%, -50%);
   max-width: 47.5%;
+  margin-top: 2.5%;
 }
 
 .itemHead{
@@ -228,6 +244,16 @@ grid-area: main;
   .link{
     margin-left: 20vw;
     width: 10vw;
+  }
+  .black {
+    display: block;
+    max-width:98%;
+    max-height:98%;
+    width: auto;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
   }
   .imgLeft{
     width: 97%;
