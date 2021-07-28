@@ -1,5 +1,5 @@
 import React from "react";
-import Blackboard from './Pictures/Blackboard.jpg';
+import Blackboard from './Pictures/fullMenu.jpeg';
 export class Menu extends React.Component {
     render() {
         return (
