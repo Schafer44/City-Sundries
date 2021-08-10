@@ -5,7 +5,7 @@ export class Menu extends React.Component {
     render() {
         return (
             <>
-                <div class='blackboardDiv'>
+                <div class='blackboardDiv' >
                     <img class='backBoard' src={Backboard} alt=""/>
                     <img class='blackBoard' src={Blackboard} alt=""/>
                 </div>

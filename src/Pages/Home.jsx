@@ -5,6 +5,8 @@ import two from "./Pictures/2.jpeg";
 import Logo from './Pictures/Logo.jpeg';
 import {Spring,animated} from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Backboard from './Pictures/BackboardSquare.jpg';
+import Blackboard from './Pictures/BlackboardSquare.jpg';
 
 export class Home extends React.Component {
     constructor(props) {
@@ -61,8 +63,10 @@ export class Home extends React.Component {
                         <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                         <ParallaxLayer sticky={{ start: 1.1, end: 1.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
                                 <div class='textboxLeft'>
-                                <div class='ItemHead'>Home</div>
-                                        <div class='ItemMain'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
+                                <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                <div class='blackboardText'>Home </div>
+                                        <div class='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
                                 </div>
                             </ParallaxLayer>
                             
@@ -71,10 +75,11 @@ export class Home extends React.Component {
                             </ParallaxLayer>
                             
                             <ParallaxLayer sticky={{ start: 3, end: 3.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <div class='textboxRight'>
-                                        <div class='ItemHead'>Hours</div>
-                                        {console.log(this.state.height)}
-                                        <div class='ItemMain'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
+                                <div class='textboxRight' >
+                                <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div class='blackboardText'>Hours</div>
+                                        <div class='blackboardText'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
                                 </div>
                             </ParallaxLayer>
                            
@@ -85,8 +90,10 @@ export class Home extends React.Component {
                                 <ParallaxLayer sticky={{ start: 4, end: 4.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeftBottom'>
-                                        <div class='ItemHead'>Contact us!</div>
-                                        <div class='ItemMain'>104 N. Washington Street Marquette, Ks 67464</div>
+                                <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div class='blackboardText'>Contact us!</div>
+                                        <div class='blackboardText'>104 N. Washington Street Marquette, Ks 67464</div>
 
                                 </div>
                             </ParallaxLayer>
@@ -126,8 +133,10 @@ export class Home extends React.Component {
                                <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 1.1, end: 1.7 }} speed={1}style={{ display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxLeft'>
-                                       <div class='ItemHead'>Home</div>
-                                               <div class='ItemMain'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
+                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                        <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                       <div class='blackboardText'>Home</div>
+                                               <div class='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
                                        </div>
                                    </ParallaxLayer>
                                    
@@ -137,9 +146,10 @@ export class Home extends React.Component {
                                    
                                    <ParallaxLayer sticky={{ start: 3.7, end: 4.3 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxRight'>
-                                               <div class='ItemHead'>Hours</div>
-                                               {console.log(this.state.height)}
-                                               <div class='ItemMain'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
+                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                               <div class='blackboardText'>Hours</div>
+                                               <div class='blackboardText'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
                                        </div>
                                    </ParallaxLayer>
                                   
@@ -150,8 +160,10 @@ export class Home extends React.Component {
                                        <ParallaxLayer sticky={{ start: 6.3, end: 6.9 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
        
                                        <div class='textboxLeftBottom'>
-                                               <div class='ItemHead'>Contact us!</div>
-                                               <div class='ItemMain'>104 N. Washington Street Marquette, Ks 67464</div>
+                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
+                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
+                                               <div class='blackboardText'>Contact us!</div>
+                                               <div class='blackboardText'>104 N. Washington Street Marquette, Ks 67464</div>
        
                                        </div>
                                    </ParallaxLayer>

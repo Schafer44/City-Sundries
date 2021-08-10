@@ -60,6 +60,30 @@ position: relative;
   left:50%;
   transform:translate(-50%, -50%);
 }
+.TextboxBackboard {
+  display: block;
+  border-radius:20px;
+  float: left;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
+  
+}
+.TextboxBlackboard {
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 42.5%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  
+}
 .Navbar{
   position: fixed; 
   z-index: 7;
@@ -110,9 +134,8 @@ li{
 .textboxLeft{
   border-radius:20px;
   display: block;
-  background: black;
   float: left;
-  width:547.5%; 
+  width:47.5%; 
   padding-bottom:47.5%;
   top:50%;
   margin-left: 2%;
@@ -125,7 +148,6 @@ li{
 .textboxLeftBottom{
   border-radius:20px;
   display: block;
-  background: black;
   float: left;
   width:47.5%; 
   margin-top: 5%;
@@ -152,7 +174,6 @@ li{
 .textboxRight{
   border-radius:20px;
   display: block;
-  background: black;
   float: right;
   width:47.5%; 
   margin-right: 2%;
@@ -176,13 +197,20 @@ li{
   max-width: 47.5%;
   margin-top: 2.5%;
 }
-
-.itemHead{
-background: white;
+.blackboardText{
+  font-family: chalkboard;
+  font-size: 11px;
+  font-size: 1.9vw;
+  margin:7%;
+  position:relative;
+  z-index: 10;
+  width: 86%;
+}
+.ItemHead{
+  z-index: 10;
 grid-area: header;
 }
 .itemMain{
-background: white;
 grid-area: main;
 }
 
@@ -237,6 +265,16 @@ grid-area: main;
 }
 }
 @media only screen and (max-width:600px){
+  .TextboxBackboard {
+    max-width: 98%;
+  }
+  .TextboxBlackboard {
+    max-width: 90%;
+  }
+  .blackboardText{
+    margin-top:10%;
+    font-size: 3vw;
+  }
   .NavbarButtons{
     margin-left: 20vw;
     width: 10vw;
