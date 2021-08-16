@@ -21,13 +21,27 @@ background: rgb(194, 193, 193);
 border-radius:100px;
 
 }
+
 :root{
   height: 100%;
   width: 100%;
   font-size: 16px;
   font-family: 'Open sans';
 }
-img{
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+.image-gallery-slide img {
+  width: 85%;
+  height: auto;
+}
+.image-gallery-thumbnail{
+  margin-top: 80vh;
+  margin-left: 10%;
+}
+
+.navbarImg{
   position: fixed;
   width: 4rem;
   height: 4rem;
@@ -40,27 +54,92 @@ display: flex;
 position: relative;
 }
 .blackBoard {
+  margin-top:3%;
+  position: fixed;
   display: block;
-  max-width:96%;
-  max-height:96%;
   width: auto;
   height: auto;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -45%);
-}
-.backBoard {
-  position: absolute;
-  display: block;
-  max-width:100%;
-  max-height:100%;
-  width: 100%;
-  height: 100%;
+  max-width:85%;
+  max-height:85%;
+  
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
 }
+.blackBoardPhoneOne {
+  z-index: 1;
+  margin-top:3%;
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+  
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.blackBoardPhoneTwo {
+  z-index: 1;
+  margin-top:3%;
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, 60%);
+}
+.blackBoardPhoneThree {
+  z-index: 1;
+  margin-top:3%;
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, 170%);
+}
+.backBoardPhoneOne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+  transform:translate(-0%, 0%);
+}
+.backBoardPhoneTwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+  transform:translate(-0%, 75%);
+}
+.backBoardPhoneThree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+  transform:translate(-0%, 50%);
+}
+.backBoard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+  
+}
 .TextboxBackboard {
+  position: fixed;
   display: block;
   border-radius:20px;
   float: left;
@@ -73,6 +152,7 @@ position: relative;
   
 }
 .TextboxBlackboard {
+  position: fixed;
   display: block;
   float: left;
   width: auto;
@@ -118,6 +198,7 @@ li{
   display: inline-block
 }
 .imgLeft{
+  position: fixed;
   display: block;
   border-radius:20px;
   background: white;
@@ -159,6 +240,7 @@ li{
   max-height: 47.5%;
 }
 .imgRightBottom{
+  position: fixed;
   display: block;
   border-radius:20px;
   background: white;
@@ -185,6 +267,7 @@ li{
   margin-top: 5%;
 }
 .imgRight{
+  position: fixed;
   display: block;
   border-radius:20px;
   background: white;
@@ -266,10 +349,12 @@ grid-area: main;
 }
 @media only screen and (max-width:600px){
   .TextboxBackboard {
-    max-width: 98%;
+    max-width: 97%;
+    margin-left: -.5%;
   }
   .TextboxBlackboard {
     max-width: 90%;
+    margin-left: 3%;
   }
   .blackboardText{
     margin-top:10%;
@@ -295,20 +380,17 @@ grid-area: main;
   }
   .imgLeft{
     width: 97%;
-    margin:1.5%;
     height: auto;
     max-width: 97%;
   }
   .imgRight{
     width: 97%;
-    margin:1.5%;
     height: auto;
     max-width: 97%;
   }
   .imgRightBottom
   {
     width: 97%;
-    margin:1.5%;
     height: auto;
     max-width: 97%;
   }
