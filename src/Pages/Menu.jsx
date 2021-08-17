@@ -27,7 +27,7 @@ export class Menu extends React.Component {
         if(this.state.width === 0){
             return(<><b></b></>);
           }
-          else if(this.state.width > 500)
+          else if(this.state.width > 600)
           {
         return (
             <>
@@ -46,11 +46,9 @@ export class Menu extends React.Component {
                     <img class='blackBoardPhoneOne' src={Menu1} alt=""/>
                 </div>
                 <div class='blackboardDiv' >
-                    <img class='backBoardPhoneTwo' src={Backboard} alt=""/>
                     <img class='blackBoardPhoneTwo' src={Menu2} alt=""/>
                 </div>
                 <div class='blackboardDiv' >
-                    <img class='backBoardPhoneThree' src={Backboard} alt=""/>
                     <img class='blackBoardPhoneThree' src={Menu3} alt=""/>
                 </div>
             </>
