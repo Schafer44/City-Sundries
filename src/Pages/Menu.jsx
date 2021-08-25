@@ -41,8 +41,8 @@ export class Menu extends React.Component {
     else{
         return (
             <>
+            <div style={{ backgroundImage: `url(${Backboard})`}}>
                 <div class='blackboardDiv' >
-                    <img class='backBoardPhoneOne' src={Backboard} alt=""/>
                     <img class='blackBoardPhoneOne' src={Menu1} alt=""/>
                 </div>
                 <div class='blackboardDiv' >
@@ -51,6 +51,8 @@ export class Menu extends React.Component {
                 <div class='blackboardDiv' >
                     <img class='blackBoardPhoneThree' src={Menu3} alt=""/>
                 </div>
+                <br></br>
+            </div>
             </>
         );
     }

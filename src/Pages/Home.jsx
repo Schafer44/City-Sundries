@@ -62,7 +62,7 @@ export class Home extends React.Component {
              <Spring
              from={{marginTop:-10}}
              to={{marginTop:0}}
-             config={{mass:10, friction:100}}
+             config={{mass:1, friction:20}}
              >
                 {props => (
                      <animated.div style={props}>
@@ -119,9 +119,10 @@ export class Home extends React.Component {
                                 <img src={Services} class='imgRightBottom' alt=""/>
                             </ParallaxLayer>
 
-                            <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                            
+                            <ParallaxLayer sticky={{ start: 6, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
-                                <div class='textboxLeft'>
+                                <div class='textboxRightBottom'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
                                 <img class='TextboxBlackboard' src={Blackboard} alt=""/>
                                         <div class='blackboardTextTitle'>Contact us!</div>
@@ -129,8 +130,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 6, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <img src={Services} class='imgRight' alt=""/>
+                            <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
                             </Parallax>
                         </animated.div>
@@ -204,7 +205,7 @@ export class Home extends React.Component {
                                        <img src={Services} class='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
-                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeft'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -214,8 +215,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <img src={Services} class='imgRight' alt=""/>
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgRight' alt=""/>
                             </ParallaxLayer>
        
        
@@ -290,7 +291,7 @@ export class Home extends React.Component {
                                        <img src={Services} class='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
-                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeft'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -300,8 +301,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <img src={Services} class='imgRight' alt=""/>
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgRight' alt=""/>
                             </ParallaxLayer>
        
        

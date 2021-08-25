@@ -102,7 +102,7 @@ position: relative;
 .backBoardPhoneOne {
   position: fixed;
   width: 100%;
-  height: 110vh;
+  height: 150vh;
 }
 .backBoardPhoneTwo {
   position: fixed;
@@ -228,9 +228,36 @@ li{
   display: block;
   border-radius:20px;
   background: white;
-  float: right;
+  float: left;
+  margin-left: 2%;
   width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
+}
+.textboxRightBottom{
+  border-radius:20px;
+  display: block;
+  float: right;
+  width:47.5%; 
+  margin-top: 5%;
   margin-right: 2%;
+  padding-bottom:47.5%;
+  top:50%;
+  height: 0;
+  max-width: 47.5%;
+  max-height: 47.5%;
+}
+.imgLeftBottom{
+  position: fixed;
+  display: block;
+  border-radius:20px;
+  background: white;
+  float: left;
+  width: auto;
+  margin-left: 2%;
   height: auto;
   top:50%;
   transform:translate(-0%, -50%);
@@ -333,6 +360,9 @@ grid-area: main;
 .textboxLeftBottom{
   max-width: 47.5%;
 }
+.textboxRightBottom{
+  max-width: 47.5%;
+}
 .imgRightBottom{
   max-width: 47.5%;
 }
@@ -401,6 +431,12 @@ grid-area: main;
     max-width: 97%;
   }
   .textboxLeftBottom{
+    width: 97%;
+    margin:1.5%;
+    height: 25%;
+    max-width: 97%;
+  }
+  .textboxRightBottom{
     width: 97%;
     margin:1.5%;
     height: 25%;
