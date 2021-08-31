@@ -62,7 +62,6 @@ export class Home extends React.Component {
           }
           else if(this.state.width > 600)
           {
-            {console.log('hello')}
         return (
             <div className="hello">
              <Spring
@@ -79,7 +78,7 @@ export class Home extends React.Component {
                         <ParallaxLayer offset={.991} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                         <ParallaxLayer offset={0} speed={0} style={{ zIndex:2,display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
-                            <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={2} showNavs={true} navStyle={2}/>
+                            <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={2} showNavs={true} navStyle={2}/>
                         </div>
                         </ParallaxLayer>
 

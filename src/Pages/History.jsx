@@ -1,7 +1,4 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Logo from './Pictures/Logo.jpeg';
-import HomeFour from './Pictures/Home4.jpg';
 import HistoryV2 from './Pictures/HistoryV2.jpeg';
 
 export class History extends React.Component {
@@ -20,20 +17,20 @@ componentWillUnmount() {
   
 updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
-
+    if((20000/-this.state.width>-20))
+    {
+      this.setState({svgWidth:100000/-this.state.width});
+    }
+    else if((20000/-this.state.width>-45)){
+      this.setState({svgWidth:20000/-this.state.width});
+    }
+    else{
+      this.setState({svgWidth:10000/-this.state.width});
+    }
 }
     render() {
       console.log(20000/-this.state.width);
-      if((20000/-this.state.width>-20))
-        {
-          this.state.svgWidth=100000/-this.state.width;
-        }
-        else if((20000/-this.state.width>-45)){
-          this.state.svgWidth = 20000/-this.state.width;
-        }
-        else{
-          this.state.svgWidth = 10000/-this.state.width;
-        }
+      
       return (
     <div>
       <div class="spacer layer1"style={{right:this.state.svgWidth}}>

@@ -18,10 +18,18 @@ export default function Navbar() {
                      <animated.div style={props}>
                 <nav class = 'Navbar'>
                     <ul class='navbar-nav'>
-                    <img class= "navbarImg" z-index="2" src={Logo}alt=""/>
-                    <Link to={''} class="link" ><img class='navbarImg'src={HomeButton}alt=""/> </Link>
-                    <Link to={'menu'}class="link"><img class='navbarImg' src={MenuButton}alt=""/></Link> 
-                    <Link to={'history'}class="link"><img class='navbarImg 'src={HistoryButton}alt=""/></Link>
+                        <li>
+                            <img class= "navbarImg" z-index="2" src={Logo}alt=""/>
+                        </li>
+                        <li>
+                            <Link to={''} class="link" ><img class='navbarImg'src={HomeButton}alt="HomeButton"/> </Link>
+                        </li>
+                        <li>
+                            <Link to={'menu'}class="link"><img class='navbarImg' src={MenuButton}alt="MenuButton"/></Link> 
+                        </li>
+                        <li>
+                            <Link to={'history'}class="link"><img class='navbarImg 'src={HistoryButton}alt="HistoryButton"/></Link>
+                        </li>
                     </ul>
                 </nav>
                 </animated.div>
