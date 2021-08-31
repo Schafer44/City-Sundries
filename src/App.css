@@ -23,6 +23,9 @@ border-radius:100px;
 }
 
 :root{
+  --magic-number: 1.11858047211;
+	--content-width: 100vw;
+	--skew-padding: calc(var(--content-width) * var(--magic-number));
   height: 100%;
   width: 100%;
   font-size: 16px;
@@ -148,6 +151,40 @@ position: relative;
   margin-left: 2.5%;
   
 }
+.spacer{
+  aspect-ratio: 540/960;
+  width: 100%;
+  right: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 1;
+  position: fixed;
+}
+.layer1{
+  background-image:url(./wave-haikei-two.svg);
+}
+.historyText{
+  margin-top: 10%;
+  right:0;
+  margin-left: 80%;
+  position: absolute;
+  z-index: 2;
+}
+.spacer2{
+  aspect-ratio: 540/960;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: fixed;
+}
+.layer2{
+  background-image:url(./wave-haikei-mobile.svg);
+}
+
+
+
+
 .Navbar{
   position: fixed; 
   z-index: 7;
@@ -291,6 +328,30 @@ li{
   max-width: 47.5%;
   margin-top: 2.5%;
 }
+.imgMiddle{
+  position: absolute;
+  display: block;
+  margin-top: 5%;
+  border-radius:20px;
+  background: white;
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 33%;
+  z-index: 4;
+}
+.backboardMiddle{
+  position: absolute;
+  display: block;
+  margin-top: 7%;
+  border-radius:20px;
+  background: white;
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 40%;
+  z-index: 4;
+}
 .blackboardText{
   font-family: chalkboard;
   color: #e0e0e0;
@@ -327,6 +388,13 @@ grid-area: main;
   grid-gap: 1rem;
   background: white;
 }
+.HistoryImage{
+  margin-top:5%;
+  width:auto;
+  height: auto;
+  max-width: 100%;
+  
+}
 .mainGrid{
   margin: 10px;
   border-radius:20px;
@@ -339,7 +407,37 @@ grid-area: main;
   background: white;
   text-align: center;
 }
-
+.HistoryImgWrapper
+{
+  height: 100px;
+    width:100px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 20% 10%; /* try 20px 10px */ 
+}
+section {
+  background: #A8D2C8;
+  position: relative;
+  color: white;
+  clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -28%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  max-width: 100%;
+}
+.HistoryCont{
+  background: #A8D2C8;
+  width: 100%;
+  z-index: 0;
+  margin-top: -28%;
+  position: relative;
+  align-items: center;
+}
+.HistoryText{
+  margin-left: 6%;
+  margin-right: 30%;
+}
 @media only screen and (min-width:600px){
   .NavbarButtons{
     margin-left: 15vw;
@@ -373,7 +471,28 @@ grid-area: main;
   max-width: 47.5%;
 }
 }
+
 @media only screen and (max-width:600px){
+  .spacer{
+    overflow-x: hidden;
+  }
+  .layer1{
+    aspect-ratio: 9/19;
+ right:-40%;
+ overflow-x: hidden;
+  }
+  .HistoryImage{
+    height:100%; /* height of container */
+    overflow: hidden;
+
+  }
+
+  .imgMiddle{
+    max-width: 70%;
+  }
+  .backboardMiddle{
+    max-width: 80%;
+  }
   .TextboxBackboard {
     max-width: 97%;
     margin-left: -.5%;

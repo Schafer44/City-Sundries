@@ -1,7 +1,5 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import one from "./Pictures/1.jpeg";
-import two from "./Pictures/2.jpeg";
 import Logo from './Pictures/Logo.jpeg';
 import {Spring,animated} from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
@@ -16,6 +14,11 @@ import Merch from './Pictures/Merch.jpg';
 import Icecream from './Pictures/Icecream.jpg';
 import Services from './Pictures/Services.jpg';
 import disableScroll from 'disable-scroll';
+import IMG_8889 from './Pictures/IMG_8889.jpeg';
+import IMG_8884 from './Pictures/IMG_8884.jpeg';
+import IMG_8870 from './Pictures/IMG_8870.jpeg';
+import IMG_8855 from './Pictures/IMG_8855.jpeg';
+
 export class Home extends React.Component {
 
     
@@ -50,6 +53,9 @@ export class Home extends React.Component {
             { url: HomeThree },
             { url: HomeFour },
             { url: HomeFive },
+            { url: IMG_8870 },
+            { url: IMG_8884 },
+            { url: IMG_8889 },
           ];
           if(this.state.width === 0){
             return(<><b></b></>);
@@ -69,17 +75,24 @@ export class Home extends React.Component {
                          
                          <Parallax pages={7} style={{ top: '0', left: '0' }}>
                          
-                        <ParallaxLayer offset={0} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                        <ParallaxLayer offset={.8} speed={1} style={{  background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
-                        <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer offset={.991} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer offset={0} speed={0} style={{ zIndex:2,display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
-                            <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={1} showNavs={true} navStyle={2}/>
+                            <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={2} showNavs={true} navStyle={2}/>
                         </div>
                         </ParallaxLayer>
-                        
-                        <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                        <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
-                        <ParallaxLayer sticky={{ start: 1.1, end: 1.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+
+                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgMiddle' alt=""/>
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer sticky={{ start: 1.1, end: 1.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
                                 <div class='textboxLeft'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
                                 <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -88,11 +101,11 @@ export class Home extends React.Component {
                                 </div>
                             </ParallaxLayer>
                             
-                            <ParallaxLayer sticky={{ start: 1.1, end: 2 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                            <ParallaxLayer sticky={{ start: 1.1, end: 2 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
                                 <img src={Icecream} class='imgRight' alt=""/>
                             </ParallaxLayer>
                             
-                            <ParallaxLayer sticky={{ start: 3, end: 3.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                            <ParallaxLayer sticky={{ start: 3, end: 3.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
                                 <div class='textboxRight' >
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
                                 <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -101,11 +114,11 @@ export class Home extends React.Component {
                                 </div>
                             </ParallaxLayer>
                            
-                            <ParallaxLayer sticky={{ start: 2.5, end: 3 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                            <ParallaxLayer sticky={{ start: 2.5, end: 3 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
                                 <img src={Merch} class='imgLeft' alt=""/>
                                 </ParallaxLayer>
 
-                                <ParallaxLayer sticky={{ start: 4, end: 4.5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <ParallaxLayer sticky={{ start: 4, end: 4.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeftBottom'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -115,12 +128,12 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 4.5, end: 5 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                            <ParallaxLayer sticky={{ start: 4.5, end: 5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
                                 <img src={Services} class='imgRightBottom' alt=""/>
                             </ParallaxLayer>
 
                             
-                            <ParallaxLayer sticky={{ start: 6, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                            <ParallaxLayer sticky={{ start: 6, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxRightBottom'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -130,8 +143,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgLeftBottom' alt=""/>
+                            <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={IMG_8855} class='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
                             </Parallax>
                         </animated.div>
@@ -155,17 +168,22 @@ export class Home extends React.Component {
                                 
                                 <Parallax pages={11.5} style={{ top: '0', left: '0' }}>
                                 
-                               <ParallaxLayer offset={0} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer offset={.8} speed={1} style={{  background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                                <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer offset={.995} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                <div>
                                <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
-                               
-                               <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer sticky={{ start: 1.1, end: 1.44 }} speed={1}style={{ display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
+                               <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgMiddle' alt=""/>
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                        </ParallaxLayer>
+                               <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                               <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                               <ParallaxLayer sticky={{ start: 1.1, end: 1.44 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxLeft'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
                                         <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -174,11 +192,11 @@ export class Home extends React.Component {
                                        </div>
                                    </ParallaxLayer>
                                    
-                                   <ParallaxLayer sticky={{ start: 2.4, end: 2.74 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 2.4, end: 2.74 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <img src={Icecream} class='imgRight' alt=""/>
                                    </ParallaxLayer>
                                    
-                                   <ParallaxLayer sticky={{ start: 3.7, end: 4.04 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 3.7, end: 4.04 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxRight'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
                                 <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -187,11 +205,11 @@ export class Home extends React.Component {
                                        </div>
                                    </ParallaxLayer>
                                   
-                                   <ParallaxLayer sticky={{ start: 5, end: 5.34}} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 5, end: 5.34}} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
                                        <img src={Merch} class='imgLeft' alt=""/>
                                        </ParallaxLayer>
        
-                                       <ParallaxLayer sticky={{ start: 6.3, end: 6.64 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                       <ParallaxLayer sticky={{ start: 6.3, end: 6.64 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
        
                                        <div class='textboxLeftBottom'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -201,11 +219,11 @@ export class Home extends React.Component {
        
                                        </div>
                                    </ParallaxLayer>
-                                   <ParallaxLayer sticky={{ start: 7.6, end: 7.94 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 7.6, end: 7.94 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <img src={Services} class='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
-                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeft'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -215,8 +233,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgRight' alt=""/>
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={IMG_8855} class='imgRight' alt=""/>
                             </ParallaxLayer>
        
        
@@ -241,17 +259,24 @@ export class Home extends React.Component {
                                 
                                 <Parallax pages={11.5} style={{ top: '0', left: '0' }}>
                                 
-                               <ParallaxLayer offset={0} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer offset={.8} speed={1} style={{  background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                                <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer offset={.995} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                <div>
                                <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
                                
-                               <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:0, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
-                               <ParallaxLayer sticky={{ start: 1.1, end: 1.8 }} speed={1}style={{ display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
+                               <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Logo} class='imgMiddle' alt=""/>
+                        </ParallaxLayer>
+                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
+                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                        </ParallaxLayer>
+
+                               <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
+                               <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                               <ParallaxLayer sticky={{ start: 1.1, end: 1.8 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxLeft'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
                                         <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -260,11 +285,11 @@ export class Home extends React.Component {
                                        </div>
                                    </ParallaxLayer>
                                    
-                                   <ParallaxLayer sticky={{ start: 2.4, end: 3.1 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 2.4, end: 3.1 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <img src={Icecream} class='imgRight' alt=""/>
                                    </ParallaxLayer>
                                    
-                                   <ParallaxLayer sticky={{ start: 3.7, end: 4.4 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 3.7, end: 4.4 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <div class='textboxRight'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
                                 <img class='TextboxBlackboard' src={Blackboard} alt=""/>
@@ -273,11 +298,11 @@ export class Home extends React.Component {
                                        </div>
                                    </ParallaxLayer>
                                   
-                                   <ParallaxLayer sticky={{ start: 5, end: 5.7 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 5, end: 5.7 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
                                        <img src={Merch} class='imgLeft' alt=""/>
                                        </ParallaxLayer>
        
-                                       <ParallaxLayer sticky={{ start: 6.3, end: 7}} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                       <ParallaxLayer sticky={{ start: 6.3, end: 7}} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
        
                                        <div class='textboxLeftBottom'>
                                        <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -287,11 +312,11 @@ export class Home extends React.Component {
        
                                        </div>
                                    </ParallaxLayer>
-                                   <ParallaxLayer sticky={{ start: 7.6, end: 8.3 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 7.6, end: 8.3 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
                                        <img src={Services} class='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
-                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.6 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
                                 <div class='textboxLeft'>
                                 <img class='TextboxBackboard' src={Backboard} alt=""/>
@@ -301,8 +326,8 @@ export class Home extends React.Component {
 
                                 </div>
                             </ParallaxLayer>
-                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgRight' alt=""/>
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                                <img src={IMG_8855} class='imgRight' alt=""/>
                             </ParallaxLayer>
        
        
