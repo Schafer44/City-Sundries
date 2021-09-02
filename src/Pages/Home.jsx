@@ -1,18 +1,23 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import Logo from './Pictures/Logo.jpeg';
+import Logo from './Pictures/NewLogo.jpeg';
+import LogoPhone from './Pictures/NewLogoPhone.jpeg';
 import {Spring,animated} from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Backboard from './Pictures/BackboardSquare.jpg';
 import Blackboard from './Pictures/BlackboardSquare.jpg';
+import BlackboardPhone from './Pictures/BlackboardSquarePhone.jpg';
 import HomeOne from './Pictures/Home1.jpg';
 import HomeTwo from './Pictures/Home2.jpg';
 import HomeThree from './Pictures/Home3.jpg';
 import HomeFour from './Pictures/Home4.jpg';
 import HomeFive from './Pictures/Home5.jpg';
 import Merch from './Pictures/Merch.jpg';
+import MerchPhone from './Pictures/MerchPhone.jpg';
 import Icecream from './Pictures/Icecream.jpg';
+import IcecreamPhone from './Pictures/IcecreamPhone.jpg';
 import Services from './Pictures/Services.jpg';
+import ServicesPhone from './Pictures/ServicesPhone.jpg';
 import disableScroll from 'disable-scroll';
 import IMG_8889 from './Pictures/IMG_8889.jpeg';
 import IMG_8884 from './Pictures/IMG_8884.jpeg';
@@ -83,67 +88,85 @@ export class Home extends React.Component {
                         </ParallaxLayer>
 
                         <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgMiddle' alt=""/>
+                                <img src={Logo} className='imgMiddle' alt=""/>
                         </ParallaxLayer>
                         <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                                <img src={Backboard} className='backboardMiddle' alt=""/>
                         </ParallaxLayer>
 
                         <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                         <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                         <ParallaxLayer sticky={{ start: 1.1, end: 1.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <div class='textboxLeft'>
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                <div class='blackboardTextTitle'>Food </div>
-                                        <div class='blackboardText'>Food Text Needed</div>
+                                <div className='textboxLeft'>
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                <div className='blackboardTextTitle'>Food </div>
+                                        <div className='blackboardText'>Food Text Needed</div>
                                 </div>
                             </ParallaxLayer>
                             
                             <ParallaxLayer sticky={{ start: 1.1, end: 2 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <img src={Icecream} class='imgRight' alt=""/>
+                                <img src={Icecream} className='imgRight' alt=""/>
                             </ParallaxLayer>
                             
                             <ParallaxLayer sticky={{ start: 3, end: 3.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <div class='textboxRight' >
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                        <div class='blackboardTextTitle'>Merchandise</div>
-                                        <div class='blackboardText'>Merch Text Needed</div>
+                                <div className='textboxRight' >
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div className='blackboardTextTitle'>Merchandise</div>
+                                        <div className='blackboardText'>We offer unique gifts and merchandise for all ages! Some favorites include women’s apparel, home decor, baby items, toys, candles, cards, and much more!</div>
                                 </div>
                             </ParallaxLayer>
                            
                             <ParallaxLayer sticky={{ start: 2.5, end: 3 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={Merch} class='imgLeft' alt=""/>
+                                <img src={Merch} className='imgLeft' alt=""/>
                                 </ParallaxLayer>
 
                                 <ParallaxLayer sticky={{ start: 4, end: 4.5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
 
-                                <div class='textboxLeftBottom'>
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                        <div class='blackboardTextTitle'>Services</div>
-                                        <div class='blackboardText'>Services Text Needed</div>
+                                <div className='textboxLeftBottom'>
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div className='blackboardTextTitle'>Services</div>
+                                        <div className='blackboardText'>Additional services are also available! Ask about our balloon bouquets, custom tee shirts, and gift wrapping. We also feature an upstairs game room great for parties, groups, or just hanging out!</div>
 
                                 </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 4.5, end: 5 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-                                <img src={Services} class='imgRightBottom' alt=""/>
+                                <img src={Services} className='imgRightBottom' alt=""/>
                             </ParallaxLayer>
-
-                            
                             <ParallaxLayer sticky={{ start: 6, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
-
-                                <div class='textboxRightBottom'>
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                        <div class='blackboardTextTitle'>Contact us!</div>
-                                        <div class='blackboardText'>Contact Text Needed</div>
-
-                                </div>
+                                <div className='textboxRightBottom'>
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div className='blackboardTextTitle'>Contact us!</div>
+                                        <div className='blackboardText'>
+                                            785-546-2234
+                                            <br></br>
+                                            104 N. Washington Street 
+                                            Marquette, Ks 67464
+                                            <br></br>
+                                            Hours: 
+                                            <br></br>
+                                            Tuesday 11-5
+                                            <br></br>
+                                            Wednesday 11-5
+                                            <br></br>
+                                            Thursday 11-5
+                                            <br></br>
+                                            Friday 11-5
+                                            <br></br>
+                                            Saturday 11-5
+                                            <br></br>
+                                            Closed Sunday and Monday
+                                            <br></br>
+                                            <br></br>
+                                            Visit our Facebook page at facebook.com/citysundries/
+                                        </div>
+                                    </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={IMG_8855} class='imgLeftBottom' alt=""/>
+                                <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
                             </Parallax>
                         </animated.div>
@@ -171,69 +194,91 @@ export class Home extends React.Component {
                         <ParallaxLayer offset={.995} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                <div>
-                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={1} showNavs={true} navStyle={2}/>
+                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
                                <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgMiddle' alt=""/>
+                                <img src={Logo} className='imgMiddle' alt=""/>
                         </ParallaxLayer>
                         <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                                <img src={Backboard} className='backboardMiddle' alt=""/>
                         </ParallaxLayer>
                                <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 1.1, end: 1.44 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
-                                       <div class='textboxLeft'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                        <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                       <div class='blackboardTextTitle'>Home</div>
-                                               <div class='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
+                                       <div className='textboxLeft'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                        <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                       <div className='blackboardTextTitle'>Home</div>
+                                               <div className='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
                                        </div>
                                    </ParallaxLayer>
                                    
                                    <ParallaxLayer sticky={{ start: 2.4, end: 2.74 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <img src={Icecream} class='imgRight' alt=""/>
+                                       <img src={Icecream} className='imgRight' alt=""/>
                                    </ParallaxLayer>
                                    
                                    <ParallaxLayer sticky={{ start: 3.7, end: 4.04 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <div class='textboxRight'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                               <div class='blackboardTextTitle'>Hours</div>
-                                               <div class='blackboardText'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
+                                       <div className='textboxRight'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                               <div className='blackboardTextTitle'>Merchandise</div>
+                                               <div className='blackboardText'>We offer unique gifts and merchandise for all ages! Some favorites include women’s apparel, home decor, baby items, toys, candles, cards, and much more! </div>
                                        </div>
                                    </ParallaxLayer>
                                   
                                    <ParallaxLayer sticky={{ start: 5, end: 5.34}} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
-                                       <img src={Merch} class='imgLeft' alt=""/>
+                                       <img src={Merch} className='imgLeft' alt=""/>
                                        </ParallaxLayer>
        
                                        <ParallaxLayer sticky={{ start: 6.3, end: 6.64 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
        
-                                       <div class='textboxLeftBottom'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                               <div class='blackboardTextTitle'>Contact us!</div>
-                                               <div class='blackboardText'>104 N. Washington Street Marquette, Ks 67464</div>
+                                       <div className='textboxLeftBottom'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                               <div className='blackboardTextTitle'>Services</div>
+                                               <div className='blackboardText'>Additional services are also available! Ask about our balloon bouquets, custom tee shirts, and gift wrapping. We also feature an upstairs game room great for parties, groups, or just hanging out!</div>
        
                                        </div>
                                    </ParallaxLayer>
                                    <ParallaxLayer sticky={{ start: 7.6, end: 7.94 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <img src={Services} class='imgRightBottom' alt=""/>
+                                       <img src={Services} className='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
                                    <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
-                                <div class='textboxLeft'>
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                        <div class='blackboardTextTitle'>Contact us!</div>
-                                        <div class='blackboardText'>Contact Text Needed</div>
+                                <div className='textboxLeft'>
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={Blackboard} alt=""/>
+                                        <div className='blackboardTextTitle'>Contact us!</div>
+                                        <div className='blackboardText'>
+                                            785-546-2234
+                                            <br></br>
+                                            104 N. Washington Street 
+                                            Marquette, Ks 67464
+                                            <br></br>
+                                            Hours: 
+                                            <br></br>
+                                            Tuesday 11-5
+                                            <br></br>
+                                            Wednesday 11-5
+                                            <br></br>
+                                            Thursday 11-5
+                                            <br></br>
+                                            Friday 11-5
+                                            <br></br>
+                                            Saturday 11-5
+                                            <br></br>
+                                            Closed Sunday and Monday
+                                            <br></br>
+                                            <br></br>
+                                            Visit our Facebook page at facebook.com/citysundries/
+                                        </div>
 
                                 </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={IMG_8855} class='imgRight' alt=""/>
+                                <img src={IMG_8855} className='imgRight' alt=""/>
                             </ParallaxLayer>
        
        
@@ -262,71 +307,93 @@ export class Home extends React.Component {
                         <ParallaxLayer offset={.995} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                <div>
-                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}showBullets={true}zIndex={1} showNavs={true} navStyle={2}/>
+                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
                                
                                <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} class='imgMiddle' alt=""/>
+                                <img src={LogoPhone} className='imgMiddle' alt=""/>
                         </ParallaxLayer>
                         <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} class='backboardMiddle' alt=""/>
+                                <img src={Backboard} className='backboardMiddle' alt=""/>
                         </ParallaxLayer>
 
                                <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 1.1, end: 1.8 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
-                                       <div class='textboxLeft'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                        <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                       <div class='blackboardTextTitle'>Home</div>
-                                               <div class='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
+                                       <div className='textboxLeft'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                        <img className='TextboxBlackboard' src={BlackboardPhone} alt=""/>
+                                       <div className='blackboardTextTitle'>Home</div>
+                                               <div className='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
                                        </div>
                                    </ParallaxLayer>
                                    
                                    <ParallaxLayer sticky={{ start: 2.4, end: 3.1 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <img src={Icecream} class='imgRight' alt=""/>
+                                       <img src={IcecreamPhone} className='imgRight' alt=""/>
                                    </ParallaxLayer>
                                    
                                    <ParallaxLayer sticky={{ start: 3.7, end: 4.4 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <div class='textboxRight'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                               <div class='blackboardTextTitle'>Hours</div>
-                                               <div class='blackboardText'> Tuesday 11-5 Wednesday 11-5 Thursday 11-5 Friday 11-5 Saturday 11-5 Closed Sunday and Monday</div>
+                                       <div className='textboxRight'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={BlackboardPhone} alt=""/>
+                                               <div className='blackboardTextTitle'>Merchandise</div>
+                                               <div className='blackboardText'>We offer unique gifts and merchandise for all ages! Some favorites include women’s apparel, home decor, baby items, toys, candles, cards, and much more!</div>
                                        </div>
                                    </ParallaxLayer>
                                   
                                    <ParallaxLayer sticky={{ start: 5, end: 5.7 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white' }}>
-                                       <img src={Merch} class='imgLeft' alt=""/>
+                                       <img src={MerchPhone} className='imgLeft' alt=""/>
                                        </ParallaxLayer>
        
                                        <ParallaxLayer sticky={{ start: 6.3, end: 7}} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
        
-                                       <div class='textboxLeftBottom'>
-                                       <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                               <div class='blackboardTextTitle'>Contact us!</div>
-                                               <div class='blackboardText'>104 N. Washington Street Marquette, Ks 67464</div>
+                                       <div className='textboxLeftBottom'>
+                                       <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={BlackboardPhone} alt=""/>
+                                               <div className='blackboardTextTitle'>Services</div>
+                                               <div className='blackboardText'>Additional services are also available! Ask about our balloon bouquets, custom tee shirts, and gift wrapping. We also feature an upstairs game room great for parties, groups, or just hanging out!</div>
        
                                        </div>
                                    </ParallaxLayer>
                                    <ParallaxLayer sticky={{ start: 7.6, end: 8.3 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
-                                       <img src={Services} class='imgRightBottom' alt=""/>
+                                       <img src={ServicesPhone} className='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
                                    <ParallaxLayer sticky={{ start: 8.9, end: 9.6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
 
-                                <div class='textboxLeft'>
-                                <img class='TextboxBackboard' src={Backboard} alt=""/>
-                                <img class='TextboxBlackboard' src={Blackboard} alt=""/>
-                                        <div class='blackboardTextTitle'>Contact us!</div>
-                                        <div class='blackboardText'>Contact Text Needed</div>
+                                <div className='textboxLeft'>
+                                <img className='TextboxBackboard' src={Backboard} alt=""/>
+                                <img className='TextboxBlackboard' src={BlackboardPhone} alt=""/>
+                                        <div className='blackboardTextTitle'>Contact us!</div>
+                                        <div className='blackboardText'>
+                                            785-546-2234
+                                            <br></br>
+                                            104 N. Washington Street 
+                                            Marquette, Ks 67464
+                                            <br></br>
+                                            Hours: 
+                                            <br></br>
+                                            Tuesday 11-5
+                                            <br></br>
+                                            Wednesday 11-5
+                                            <br></br>
+                                            Thursday 11-5
+                                            <br></br>
+                                            Friday 11-5
+                                            <br></br>
+                                            Saturday 11-5
+                                            <br></br>
+                                            Closed Sunday and Monday
+                                            <br></br>
+                                            <br></br>
+                                            Visit our Facebook page at facebook.com/citysundries/
+                                        </div>
 
                                 </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={IMG_8855} class='imgRight' alt=""/>
+                                <img src={IMG_8855} className='imgRight' alt=""/>
                             </ParallaxLayer>
        
        

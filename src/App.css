@@ -169,6 +169,7 @@ position: relative;
   margin-left: 80%;
   position: absolute;
   z-index: 2;
+  text-align: center;
 }
 .spacer2{
   aspect-ratio: 540/960;
@@ -203,6 +204,7 @@ position: relative;
   background-color: #A8D2C8;
   cursor: pointer; 
   display: inline-block;
+  margin-right: 10%;
 }
 .link{
   position: relative;
@@ -360,6 +362,7 @@ li{
   margin:7%;
   position:relative;
   z-index: 10;
+  text-align: center;
   width: 86%;
 }
 .blackboardTextTitle{
@@ -433,10 +436,13 @@ section {
   margin-top: -28%;
   position: relative;
   align-items: center;
+  height: 100%;
 }
 .HistoryText{
   margin-left: 6%;
-  margin-right: 30%;
+  margin-right: 25%;
+  height: 100%;
+  text-align: center;
 }
 @media only screen and (min-width:600px){
   .NavbarButtons{
@@ -445,7 +451,7 @@ section {
     margin-bottom: 4x;
   }
   .link{
-    margin-left: 15vw;
+    margin-left: 13vw;
     width: 25vw;
     margin-bottom: 4x;
   }
@@ -477,9 +483,10 @@ section {
     overflow-x: hidden;
   }
   .layer1{
-    aspect-ratio: 9/19;
- right:-40%;
+    aspect-ratio: 9/20;
+ right:-30%;
  overflow-x: hidden;
+ max-height: 100%;
   }
   .HistoryImage{
     height:100%; /* height of container */

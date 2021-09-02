@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link} from 'react-router-dom';
-import Logo from './Pictures/Logo.jpeg';
+import Logo from './Pictures/NewLogoPhone.jpeg';
 import HistoryButton from './Pictures/History.jpeg';
 import HomeButton from './Pictures/Home.jpeg';
 import MenuButton from './Pictures/Menu.jpeg';
@@ -16,19 +16,19 @@ export default function Navbar() {
              >
                 {props => (
                      <animated.div style={props}>
-                <nav class = 'Navbar'>
-                    <ul class='navbar-nav'>
+                <nav className = 'Navbar'>
+                    <ul className='navbar-nav'>
                         <li>
-                            <img class= "navbarImg" z-index="2" src={Logo}alt=""/>
+                            <img className= "navbarImg" z-index="2" src={Logo}alt=""/>
                         </li>
                         <li>
-                            <Link to={''} class="link" ><img class='navbarImg'src={HomeButton}alt="HomeButton"/> </Link>
+                            <Link to={''} className="link" ><img className='navbarImg'src={HomeButton}alt="HomeButton"/> </Link>
                         </li>
                         <li>
-                            <Link to={'menu'}class="link"><img class='navbarImg' src={MenuButton}alt="MenuButton"/></Link> 
+                            <Link to={'menu'}className="link"><img className='navbarImg' src={MenuButton}alt="MenuButton"/></Link> 
                         </li>
                         <li>
-                            <Link to={'history'}class="link"><img class='navbarImg 'src={HistoryButton}alt="HistoryButton"/></Link>
+                            <Link to={'history'}className="link"><img className='navbarImg 'src={HistoryButton}alt="HistoryButton"/></Link>
                         </li>
                     </ul>
                 </nav>
