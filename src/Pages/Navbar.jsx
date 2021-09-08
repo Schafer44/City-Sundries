@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link} from 'react-router-dom';
-import Logo from './Pictures/NewLogoPhone.jpeg';
+import Logo from './Pictures/LogoPhone.jpeg';
 import HistoryButton from './Pictures/History.jpeg';
 import HomeButton from './Pictures/Home.jpeg';
 import MenuButton from './Pictures/Menu.jpeg';

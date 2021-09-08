@@ -508,13 +508,15 @@ section {
     max-width: 90%;
     margin-left: 3%;
   }
+
   .blackboardText{
-    margin-top:10%;
-    font-size: 3vw;
+    margin-bottom:1%;
+    font-size: 4vw;
+    top:-10%;
   }
   .blackboardTextTitle{
-    margin-top:10%;
-    font-size: 3vw;
+    margin-top:3%;
+    font-size: 4vw;
   }
   .NavbarButtons{
     margin-left: 20vw;
@@ -575,7 +577,18 @@ section {
     max-width: 97%;
   }
 }
+@media only screen and (max-width:475px){
 
+  .blackboardText{
+    margin-bottom:1%;
+    font-size: 4.3vw;
+    top:-10%;
+  }
+  .blackboardTextTitle{
+    margin-top:10%;
+    font-size: 4.2vw;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
