@@ -48,10 +48,6 @@ export class Home extends React.Component {
 
     
     render() {
-        disableScroll.on();
-        setTimeout(function () {
-            disableScroll.off();
-        }, 2000);
         const images = [
             { url: HomeOne },
             { url: HomeTwo },
@@ -70,7 +66,7 @@ export class Home extends React.Component {
         return (
             <div className="hello">
              <Spring
-             from={{marginTop:-10}}
+             from={{marginTop:0}}
              to={{marginTop:0}}
              config={{mass:1, friction:20}}
              >
@@ -87,12 +83,6 @@ export class Home extends React.Component {
                         </div>
                         </ParallaxLayer>
 
-                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} className='imgMiddle' alt=""/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} className='backboardMiddle' alt=""/>
-                        </ParallaxLayer>
 
                         <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                         <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
@@ -181,7 +171,7 @@ export class Home extends React.Component {
                 console.log('please')
                 return (
                     <Spring
-                    from={{marginTop:-10}}
+                    from={{marginTop:0}}
                     to={{marginTop:0}}
                     config={{mass:10, friction:100}}
                     >
@@ -197,12 +187,6 @@ export class Home extends React.Component {
                                <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
-                               <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Logo} className='imgMiddle' alt=""/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} className='backboardMiddle' alt=""/>
-                        </ParallaxLayer>
                                <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 1.1, end: 1.44 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
@@ -294,7 +278,7 @@ export class Home extends React.Component {
                 console.log('please')
                 return (
                     <Spring
-                    from={{marginTop:-10}}
+                    from={{marginTop:0}}
                     to={{marginTop:0}}
                     config={{mass:10, friction:100}}
                     >
@@ -310,14 +294,6 @@ export class Home extends React.Component {
                                <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
-                               
-                               <ParallaxLayer offset={.80} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={LogoPhone} className='imgMiddle' alt=""/>
-                        </ParallaxLayer>
-                        <ParallaxLayer offset={.80} speed={1}style={{ zIndex:5,display: 'flex',justifyContent: 'center',alignItems: 'center',color: 'white', }}>
-                                <img src={Backboard} className='backboardMiddle' alt=""/>
-                        </ParallaxLayer>
-
                                <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 3.4, end: 4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer sticky={{ start: 1.1, end: 1.8 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex',alignItems: 'center',color: 'white' }}>
