@@ -16,9 +16,34 @@ body {
   transform:translate(-50%, -50%);
   max-width:85%;
   max-height:85%;
-  animation: fade 4.1s ease-in;
+  animation: fade 4s ease-in;
   animation-fill-mode: forwards;
 }
+
+.LogoSplashScreenHome{
+  position: fixed;
+  display: block;
+  width: auto;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  max-width:85%;
+  max-height:85%;
+  animation: fadeOut 2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.WhiteScreen{
+  height: 100%;
+  width: 100%;
+  animation: fadeOut 2s ease-in;
+  background-color: #A8D2C8;
+  position: absolute;
+  z-index: 20;
+  top:0;
+  animation-fill-mode: forwards;
+  }
 .SplashScreenDiv{
   background-color: #A8D2C8;
   height: 100%;
@@ -26,9 +51,15 @@ body {
   position: absolute;
 }
 
+@keyframes fadeOut {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+  0% {z-index: 20;}
+  100%{z-index: 0;}
+}
 @keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
+  0%,90%,100% { opacity: 0 }
+  40%,60% { opacity: 1 }
 }
 .App-logo {
   height: 40vmin;
@@ -212,7 +243,7 @@ position: relative;
 
 .Navbar{
   position: fixed; 
-  z-index: 7;
+  z-index: 4;
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;

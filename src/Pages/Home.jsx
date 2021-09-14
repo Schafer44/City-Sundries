@@ -1,7 +1,5 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import Logo from './Pictures/NewLogo.jpeg';
-import LogoPhone from './Pictures/NewLogoPhone.jpeg';
 import {Spring,animated} from 'react-spring';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Backboard from './Pictures/BackboardSquare.jpg';
@@ -18,7 +16,6 @@ import Icecream from './Pictures/Icecream.jpg';
 import IcecreamPhone from './Pictures/IcecreamPhone.jpg';
 import Services from './Pictures/Services.jpg';
 import ServicesPhone from './Pictures/ServicesPhone.jpg';
-import disableScroll from 'disable-scroll';
 import IMG_8889 from './Pictures/IMG_8889.jpeg';
 import IMG_8884 from './Pictures/IMG_8884.jpeg';
 import IMG_8870 from './Pictures/IMG_8870.jpeg';
@@ -73,6 +70,7 @@ export class Home extends React.Component {
                 {props => (
                      <animated.div style={props}>
                          
+            <div class="WhiteScreen"></div>
                          <Parallax pages={7} style={{ top: '0', left: '0' }}>
                          
                         <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
@@ -164,6 +162,7 @@ export class Home extends React.Component {
                 }
             </Spring>
             </div>
+            
         );
             }
             else if(this.state.width > 450 && this.state.width < 600)
@@ -177,7 +176,7 @@ export class Home extends React.Component {
                     >
                        {props => (
                             <animated.div style={props}>
-                                
+                                <div class="WhiteScreen"></div>
                                 <Parallax pages={11.5} style={{ top: '0', left: '0' }}>
                                 
                                 <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
@@ -284,7 +283,7 @@ export class Home extends React.Component {
                     >
                        {props => (
                             <animated.div style={props}>
-                                
+                                <div class="WhiteScreen"></div>
                                 <Parallax pages={11.5} style={{ top: '0', left: '0' }}>
                                 
                                 <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
