@@ -6,6 +6,62 @@ body {
   overflow-x: hidden; 
   /* Hide scrollbars */
 }
+.LogoSplashScreen{
+  position: fixed;
+  display: block;
+  width: auto;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  max-width:85%;
+  max-height:85%;
+  animation: fade 4s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.LogoSplashScreenHome{
+  position: fixed;
+  display: block;
+  width: auto;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  max-width:85%;
+  max-height:85%;
+  animation: fadeOut 2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.WhiteScreen{
+  height: 100%;
+  width: 100%;
+  animation: fadeOut 2s ease-in;
+  background-color: #A8D2C8;
+  position: fixed;
+  z-index: 20;
+  top:0;
+  animation-fill-mode: forwards;
+
+  }
+.SplashScreenDiv{
+  background-color: #A8D2C8;
+  height: 100%;
+  width:100%;
+  position: absolute;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+  0% {z-index: 20;}
+  100%{z-index: 0;}
+}
+@keyframes fade {
+  0%,90%,100% { opacity: 0 }
+  40%,60% { opacity: 1 }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,13 +77,30 @@ background: rgb(194, 193, 193);
 border-radius:100px;
 
 }
+
 :root{
+  --magic-number: 1.11858047211;
+	--content-width: 100vw;
+	--skew-padding: calc(var(--content-width) * var(--magic-number));
   height: 100%;
   width: 100%;
   font-size: 16px;
   font-family: 'Open sans';
 }
-img{
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+.image-gallery-slide img {
+  width: 85%;
+  height: auto;
+}
+.image-gallery-thumbnail{
+  margin-top: 80vh;
+  margin-left: 10%;
+}
+
+.navbarImg{
   position: fixed;
   width: 4rem;
   height: 4rem;
@@ -39,20 +112,166 @@ margin: 0;
 display: flex;
 position: relative;
 }
-.black {
+.blackBoard {
+  margin-top:3%;
+  position: fixed;
   display: block;
-  max-width:98%;
-  max-height:98%;
   width: auto;
   height: auto;
+  max-width:85%;
+  max-height:85%;
+  
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
 }
+.blackBoardPhoneOne {
+  z-index: 1;
+  margin-left: 7.5%;
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+  transform:translate(-0%, 25%);
+}
+.blackBoardPhoneTwo {
+  z-index: 1;
+  margin-top:24%;
+  margin-left: 7.5%;
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+}
+.blackBoardPhoneThree {
+  z-index: 1;
+  margin-top:3%;
+  margin-left: 7.5%;
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:85%;
+  max-height:85%;
+}
+.backBoardPhoneOne {
+  position: fixed;
+  width: 100%;
+  height: 150vh;
+}
+.backBoardPhoneTwo {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.backBoardPhoneThree {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.backBoard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
+  
+}
+.TextboxBackboard {
+  position: fixed;
+  display: block;
+  border-radius:20px;
+  float: left;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
+  
+}
+.TextboxBlackboard {
+  position: fixed;
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 42.5%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  
+}
+.TextboxBlackboardHistory {
+  position: absolute;
+  display: block;
+  float: left;
+  width: 92%;
+  height: 110%;
+  top:45%;
+  transform:translate(-0%, -50%);
+  margin-top: 2.5%;
+  margin-left: 4%;
+  
+}
+.TextboxBackboardHistory {
+  border-radius:20px;
+  position: absolute;
+  display: block;
+  float: left;
+  width: 96%;
+  height: 120%;
+  top:45%;
+  transform:translate(-0%, -50%);
+  margin-top: 2.5%;
+  margin-left: 2%;
+  z-index: 0;
+  
+}
+
+.spacer{
+  aspect-ratio: 540/960;
+  width: 100%;
+  right: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.layer1{
+  background-image:url(./wave-haikei-two.svg);
+}
+.historyText{
+  margin-top: 10%;
+  right:0;
+  margin-left: 80%;
+  position: absolute;
+  z-index: 10;
+  text-align: left;
+}
+.spacer2{
+  aspect-ratio: 540/960;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: fixed;
+}
+.layer2{
+  background-image:url(./wave-haikei-mobile.svg);
+}
+
+
+
 
 .Navbar{
   position: fixed; 
-  z-index: 7;
+  z-index: 4;
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
@@ -68,6 +287,7 @@ position: relative;
   background-color: #A8D2C8;
   cursor: pointer; 
   display: inline-block;
+  margin-right: 10%;
 }
 .link{
   position: relative;
@@ -84,49 +304,166 @@ li{
   display: inline-block
 }
 .imgLeft{
-  position: static;
+  position: fixed;
+  display: block;
   border-radius:20px;
-  background: black;
-  grid-area: imgLeft;
-  z-index: 0;
+  background: white;
+  float: left;
+  margin-left: 2%;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
+
 }
 .textboxLeft{
   border-radius:20px;
-  background: white;
-  grid-area: textboxLeft;
+  display: block;
+  float: left;
+  width:47.5%; 
+  padding-bottom:47.5%;
+  top:50%;
+  margin-left: 2%;
+  height: 0;
+  max-width: 47.5%;
+  max-height: 47.5%;
+  margin-top: 5%;
+  
 }
 .textboxLeftBottom{
   border-radius:20px;
-  background: white;
-  grid-area: textboxLeftBottom;
+  display: block;
+  float: left;
+  width:47.5%; 
+  margin-top: 5%;
+  margin-left: 2%;
+  padding-bottom:47.5%;
+  top:50%;
+  height: 0;
+  max-width: 47.5%;
+  max-height: 47.5%;
 }
 .imgRightBottom{
-  height: 100%;
-  position: static;
+  position: fixed;
+  display: block;
   border-radius:20px;
-  background: black;
-  grid-area: imgRightBottom;
-  z-index: 0;
+  background: white;
+  float: left;
+  margin-right: 2%;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
+}
+.textboxRightBottom{
+  border-radius:20px;
+  display: block;
+  float: right;
+  width:47.5%; 
+  margin-top: 5%;
+  margin-right: 2%;
+  padding-bottom:47.5%;
+  top:50%;
+  height: 0;
+  max-width: 47.5%;
+  max-height: 47.5%;
+}
+.imgLeftBottom{
+  position: fixed;
+  display: block;
+  border-radius:20px;
+  background: white;
+  float: left;
+  width: auto;
+  margin-left: 2%;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
 }
 .textboxRight{
   border-radius:20px;
-  background: white;
-  grid-area: textboxRight;
+  display: block;
+  float: right;
+  width:47.5%; 
+  margin-right: 2%;
+  padding-bottom:47.5%;
+  top:50%;
+  height: 0;
+  max-width: 47.5%;
+  max-height: 47.5%;
+  margin-top: 5%;
 }
 .imgRight{
-  position: static;
+  position: fixed;
+  display: block;
   border-radius:20px;
   background: white;
-  grid-area: imgRight;
-  z-index: 0;
+  float: right;
+  margin-right: 2%;
+  width: auto;
+  height: auto;
+  top:50%;
+  transform:translate(-0%, -50%);
+  max-width: 47.5%;
+  margin-top: 2.5%;
 }
-
-.itemHead{
-background: white;
+.imgMiddle{
+  position: absolute;
+  display: block;
+  margin-top: 5%;
+  border-radius:20px;
+  background: white;
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 33%;
+  z-index: 4;
+}
+.backboardMiddle{
+  position: absolute;
+  display: block;
+  margin-top: 7%;
+  border-radius:20px;
+  background: white;
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 40%;
+  z-index: 4;
+}
+.blackboardText{
+  font-family: chalkboard;
+  color: #e0e0e0;
+  font-size: 11px;
+  font-size: 1.9vw;
+  margin:7%;
+  position:relative;
+  z-index: 10;
+  text-align: center;
+  width: 86%;
+}
+.blackboardTextTitle{
+  font-family: chalkboard;
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 11px;
+  font-size: 1.9vw;
+  margin:7%;
+  position:relative;
+  z-index: 10;
+  width: 86%;
+}
+.ItemHead{
+  z-index: 10;
 grid-area: header;
 }
 .itemMain{
-background: white;
 grid-area: main;
 }
 
@@ -136,6 +473,13 @@ grid-area: main;
   grid-template-areas:p 'header header header''main main main''main main main';
   grid-gap: 1rem;
   background: white;
+}
+.HistoryImage{
+  margin-top:5%;
+  width:100%;
+  height: auto;
+  max-width: 100%;
+  
 }
 .mainGrid{
   margin: 10px;
@@ -149,6 +493,93 @@ grid-area: main;
   background: white;
   text-align: center;
 }
+.HistoryImgWrapper
+{
+  height: 100px;
+    width:100px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 20% 10%; /* try 20px 10px */ 
+}
+section {
+  background: #A8D2C8;
+  position: relative;
+  color: white;
+  clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -28%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 0;
+}
+.sectionTwo{
+  background: #223850;
+  position: absolute;
+  z-index: 0;
+  color: white;
+  clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -32%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.sectionThree{
+  background: gainsboro;
+  position: absolute;
+  z-index: 0;
+  clip-path: polygon(0 45%, 92% 0%, 100% 100%, 0% 100%);
+  margin-top: -30.5%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.HistoryCont{
+  background: #A8D2C8;
+  width: 100%;
+  z-index: 0;
+  margin-top: -28%;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+.filler{
+ height: 15%;
+ width: 100%;
+ background: #A8D2C8;
+ position: absolute;
+ z-index: -1;
+}
+.HistoryTextbox{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.HistoryText{
+  font-family: chalkboard;
+  color: #e0e0e0;
+  font-size: 11px;
+  font-size: 1.9vw;
+  margin-left:4%;
+  position:relative;
+  z-index: 2;
+  text-align: center;
+  width: 86%;
+}
+.HistoryTextPhone{
+  font-family: chalkboard;
+  color: #e0e0e0;
+  font-size: 20px;
+  font-size: 4vw;
+  margin-left:4%;
+  position:relative;
+  z-index: 2;
+  text-align: center;
+  width: 86%;
+}
 
 @media only screen and (min-width:600px){
   .NavbarButtons{
@@ -157,42 +588,83 @@ grid-area: main;
     margin-bottom: 4x;
   }
   .link{
-    margin-left: 15vw;
+    margin-left: 13vw;
     width: 25vw;
     margin-bottom: 4x;
   }
 .imgLeft{
-  width: 100%;
-  height: 100%;
-  grid-row:2;
-  grid-column:1;
+  max-width: 47.5%;
 }
 .textboxLeft{
-  grid-row:1;
-  grid-column:1;
+  max-width: 47.5%;
 }
 .textboxLeftBottom{
-  grid-row:3;
-  grid-column:1;
+  max-width: 47.5%;
+}
+.textboxRightBottom{
+  max-width: 47.5%;
 }
 .imgRightBottom{
-  grid-row:3;
-  grid-column:2;
-  width: 100%;
-  height: 100%;
+  max-width: 47.5%;
 }
 .textboxRight{
-  grid-row:2;
-  grid-column:2;
+  max-width: 47.5%;
 }
 .imgRight{
-  grid-row:1;
-  grid-column:2;
-  width: 100%;
-  height: 100%;
+  max-width: 47.5%;
 }
 }
+
 @media only screen and (max-width:600px){
+
+  .HistoryText{
+    font-size: 4vw;
+  }
+
+  .HistoryTextbox{
+    margin-left: 2%;
+    margin-top: 20%;
+    margin-right: 2%;
+  }
+  .spacer{
+    overflow-x: hidden;
+  }
+  .layer1{
+    aspect-ratio: 9/20;
+ right:-30%;
+ overflow-x: hidden;
+ max-height: 100%;
+  }
+  .HistoryImage{
+    height:100%; /* height of container */
+    overflow: hidden;
+
+  }
+
+  .imgMiddle{
+    max-width: 70%;
+  }
+  .backboardMiddle{
+    max-width: 80%;
+  }
+  .TextboxBackboard {
+    max-width: 97%;
+    margin-left: -.5%;
+  }
+  .TextboxBlackboard {
+    max-width: 90%;
+    margin-left: 3%;
+  }
+
+  .blackboardText{
+    margin-bottom:1%;
+    font-size: 4vw;
+    top:-10%;
+  }
+  .blackboardTextTitle{
+    margin-top:3%;
+    font-size: 4vw;
+  }
   .NavbarButtons{
     margin-left: 20vw;
     width: 10vw;
@@ -201,38 +673,69 @@ grid-area: main;
     margin-left: 20vw;
     width: 10vw;
   }
-.imgLeft{
-  width: 100%;
-  height: 100%;
-  grid-row:3;
-  grid-column:1;
+  .black {
+    display: block;
+    max-width:98%;
+    max-height:98%;
+    width: auto;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+  .imgLeft{
+    width: 97%;
+    height: auto;
+    max-width: 97%;
+  }
+  .imgRight{
+    width: 97%;
+    height: auto;
+    max-width: 97%;
+  }
+  .imgRightBottom
+  {
+    width: 97%;
+    height: auto;
+    max-width: 97%;
+  }
+  .textboxLeft{
+    width: 97%;
+    margin:1.5%;
+    height: 25%;
+    max-width: 97%;
+  }
+  .textboxLeftBottom{
+    width: 97%;
+    margin:1.5%;
+    height: 25%;
+    max-width: 97%;
+  }
+  .textboxRightBottom{
+    width: 97%;
+    margin:1.5%;
+    height: 25%;
+    max-width: 97%;
+  }
+  .textboxRight{
+    width: 97%;
+    margin:1.5%;
+    height: 25%;
+    max-width: 97%;
+  }
 }
-.textboxLeft{
-  grid-row:2;
-  grid-column:1;
-}
-.textboxLeftBottom{
-  grid-row:6;
-  grid-column:1;
-}
-.imgRightBottom{
-  width: 100%;
-  height: 100%;
-  grid-row:5;
-  grid-column:1;
-}
-.textboxRight{
-  grid-row:4;
-  grid-column:1;
-}
-.imgRight{
-  width: 100%;
-  height: 100%;
-  grid-row:1;
-  grid-column:1;
-}
-}
+@media only screen and (max-width:475px){
 
+  .blackboardText{
+    margin-bottom:1%;
+    font-size: 4.3vw;
+    top:-10%;
+  }
+  .blackboardTextTitle{
+    margin-top:10%;
+    font-size: 4.2vw;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

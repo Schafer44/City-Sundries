@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link} from 'react-router-dom';
-import Logo from './Pictures/Logo.jpeg';
+import Logo from './Pictures/LogoPhone.jpeg';
 import HistoryButton from './Pictures/History.jpeg';
 import HomeButton from './Pictures/Home.jpeg';
 import MenuButton from './Pictures/Menu.jpeg';
@@ -10,18 +10,26 @@ import {Spring,animated} from 'react-spring';
 export default function Navbar() {
         return (
             <Spring
-             from={{opacity:1,marginLeft:-8000}}
+             from={{opacity:1,marginLeft:0}}
              to={{opacity:1,marginLeft:0}}
              config={{mass:10, friction:100}}
              >
                 {props => (
                      <animated.div style={props}>
-                <nav class = 'Navbar'>
-                    <ul class='navbar-nav'>
-                    <img class= "navLogo" z-index="2" src={Logo}alt=""/>
-                    <Link to={''} class="link" ><img src={HomeButton}alt=""/> </Link>
-                    <Link to={'menu'}class="link"><img src={MenuButton}alt=""/></Link> 
-                    <Link to={'history'}class="link"><img src={HistoryButton}alt=""/></Link>
+                <nav className = 'Navbar'>
+                    <ul className='navbar-nav'>
+                        <li>
+                            <img className= "navbarImg" z-index="2" src={Logo}alt=""/>
+                        </li>
+                        <li>
+                            <Link to={''} className="link" ><img className='navbarImg'src={HomeButton}alt="HomeButton"/> </Link>
+                        </li>
+                        <li>
+                            <Link to={'menu'}className="link"><img className='navbarImg' src={MenuButton}alt="MenuButton"/></Link> 
+                        </li>
+                        <li>
+                            <Link to={'history'}className="link"><img className='navbarImg 'src={HistoryButton}alt="HistoryButton"/></Link>
+                        </li>
                     </ul>
                 </nav>
                 </animated.div>
