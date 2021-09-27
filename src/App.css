@@ -39,10 +39,11 @@ body {
   width: 100%;
   animation: fadeOut 2s ease-in;
   background-color: #A8D2C8;
-  position: absolute;
+  position: fixed;
   z-index: 20;
   top:0;
   animation-fill-mode: forwards;
+
   }
 .SplashScreenDiv{
   background-color: #A8D2C8;
@@ -232,6 +233,7 @@ position: relative;
   z-index: 0;
   
 }
+
 .spacer{
   aspect-ratio: 540/960;
   width: 100%;
@@ -239,7 +241,7 @@ position: relative;
   background-repeat: repeat;
   background-size: cover;
   z-index: 1;
-  position: fixed;
+  position: relative;
 }
 .layer1{
   background-image:url(./wave-haikei-two.svg);
@@ -249,8 +251,8 @@ position: relative;
   right:0;
   margin-left: 80%;
   position: absolute;
-  z-index: 2;
-  text-align: center;
+  z-index: 10;
+  text-align: left;
 }
 .spacer2{
   aspect-ratio: 540/960;
@@ -349,7 +351,7 @@ li{
   border-radius:20px;
   background: white;
   float: left;
-  margin-left: 2%;
+  margin-right: 2%;
   width: auto;
   height: auto;
   top:50%;
@@ -474,7 +476,7 @@ grid-area: main;
 }
 .HistoryImage{
   margin-top:5%;
-  width:auto;
+  width:100%;
   height: auto;
   max-width: 100%;
   
@@ -509,6 +511,32 @@ section {
   align-items:center;
   overflow: hidden;
   max-width: 100%;
+  z-index: 0;
+}
+.sectionTwo{
+  background: #223850;
+  position: absolute;
+  z-index: 0;
+  color: white;
+  clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -32%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.sectionThree{
+  background: gainsboro;
+  position: absolute;
+  z-index: 0;
+  clip-path: polygon(0 45%, 92% 0%, 100% 100%, 0% 100%);
+  margin-top: -30.5%;
+  padding: 30% 10%;
+  align-items:center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 .HistoryCont{
   background: #A8D2C8;
@@ -517,14 +545,42 @@ section {
   margin-top: -28%;
   position: relative;
   align-items: center;
-  height: 100%;
+  height: auto;
+}
+.filler{
+ height: 15%;
+ width: 100%;
+ background: #A8D2C8;
+ position: absolute;
+ z-index: -1;
+}
+.HistoryTextbox{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .HistoryText{
-  margin-left: 6%;
-  margin-right: 25%;
-  height: 100%;
+  font-family: chalkboard;
+  color: #e0e0e0;
+  font-size: 11px;
+  font-size: 1.9vw;
+  margin-left:4%;
+  position:relative;
+  z-index: 2;
   text-align: center;
+  width: 86%;
 }
+.HistoryTextPhone{
+  font-family: chalkboard;
+  color: #e0e0e0;
+  font-size: 20px;
+  font-size: 4vw;
+  margin-left:4%;
+  position:relative;
+  z-index: 2;
+  text-align: center;
+  width: 86%;
+}
+
 @media only screen and (min-width:600px){
   .NavbarButtons{
     margin-left: 15vw;
@@ -560,6 +616,16 @@ section {
 }
 
 @media only screen and (max-width:600px){
+
+  .HistoryText{
+    font-size: 4vw;
+  }
+
+  .HistoryTextbox{
+    margin-left: 2%;
+    margin-top: 20%;
+    margin-right: 2%;
+  }
   .spacer{
     overflow-x: hidden;
   }

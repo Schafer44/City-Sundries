@@ -32,6 +32,7 @@ export class Menu extends React.Component {
         return (
             <>
                 <div className='blackboardDiv' >
+                <div class="WhiteScreen"></div>
                     <img className='backBoard' src={Backboard} alt=""/>
                     <img className='blackBoard' src={Blackboard} alt=""/>
                 </div>
@@ -41,6 +42,7 @@ export class Menu extends React.Component {
     else{
         return (
             <>
+             <div class="WhiteScreen"></div>
             <div style={{ backgroundImage: `url(${Backboard})`}}>
                 <div className='blackboardDiv' >
                     <img className='blackBoardPhoneOne' src={Menu1} alt=""/>

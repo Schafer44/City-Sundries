@@ -55,6 +55,13 @@ export class Home extends React.Component {
             { url: IMG_8884 },
             { url: IMG_8889 },
           ];
+          const imagesPhone = [
+            { url: HomeOne },
+            { url: HomeTwo },
+            { url: HomeThree },
+            { url: HomeFive },
+            { url: IMG_8870 },
+          ];
           if(this.state.width === 0){
             return(<><b></b></>);
           }
@@ -290,7 +297,7 @@ export class Home extends React.Component {
                         <ParallaxLayer offset={.995} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                                <ParallaxLayer offset={0} speed={0} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                <div>
-                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={1} showNavs={true} navStyle={2}/>
+                               <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={imagesPhone}zIndex={1} showNavs={true} navStyle={2}/>
                                </div>
                                </ParallaxLayer>
                                <ParallaxLayer sticky={{ start: 1.5, end: 2.4 }} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
