@@ -206,6 +206,32 @@ position: relative;
   margin-left: 2.5%;
   
 }
+.TextboxBlackboardHistory {
+  position: absolute;
+  display: block;
+  float: left;
+  width: 92%;
+  height: 110%;
+  top:45%;
+  transform:translate(-0%, -50%);
+  margin-top: 2.5%;
+  margin-left: 4%;
+  
+}
+.TextboxBackboardHistory {
+  border-radius:20px;
+  position: absolute;
+  display: block;
+  float: left;
+  width: 96%;
+  height: 120%;
+  top:45%;
+  transform:translate(-0%, -50%);
+  margin-top: 2.5%;
+  margin-left: 2%;
+  z-index: 0;
+  
+}
 .spacer{
   aspect-ratio: 540/960;
   width: 100%;
