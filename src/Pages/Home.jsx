@@ -46,8 +46,8 @@ export class Home extends React.Component {
     
     render() {
         const images = [
-            { url: HomeOne },
             { url: HomeTwo },
+            { url: HomeOne },
             { url: HomeThree },
             { url: HomeFour },
             { url: HomeFive },
@@ -56,8 +56,8 @@ export class Home extends React.Component {
             { url: IMG_8889 },
           ];
           const imagesPhone = [
-            { url: HomeOne },
             { url: HomeTwo },
+            { url: HomeOne },
             { url: HomeThree },
             { url: HomeFive },
             { url: IMG_8870 },
@@ -81,7 +81,7 @@ export class Home extends React.Component {
                          <Parallax pages={7} style={{ top: '0', left: '0' }}>
                          
                         <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to top, #E1A6B6, #223850)"}} />
-                        <ParallaxLayer offset={.991} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
+                        <ParallaxLayer offset={.99} speed={1} style={{ zIndex:5, background: "linear-gradient(to bottom, #E1A6B6, #223850)"}} />
                         <ParallaxLayer offset={0} speed={0} style={{ zIndex:2,display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div>
                             <SimpleImageSlider style={{maxWidth:'99%',maxHeight:'66%'}}width={this.state.width}height={this.state.height}images={images}zIndex={2} showNavs={true} navStyle={2}/>
@@ -96,7 +96,7 @@ export class Home extends React.Component {
                                 <img className='TextboxBackboard' src={Backboard} alt=""/>
                                 <img className='TextboxBlackboard' src={Blackboard} alt=""/>
                                 <div className='blackboardTextTitle'>Food </div>
-                                        <div className='blackboardText'>Food Text Needed</div>
+                                        <div className='blackboardText'> Stop in for lunch and try one of our ice cold cherry limeades, grilled chicke wraps, or a bowel of homeade ice cream! Other fan favorites include malts, freshly made sandwiches, and fountain drinks. City Sundries is know for their homemade ice cream, with new flavors available every week! Come try some before it's gone! </div>
                                 </div>
                             </ParallaxLayer>
                             
@@ -199,9 +199,9 @@ export class Home extends React.Component {
                                        <div className='textboxLeft'>
                                        <img className='TextboxBackboard' src={Backboard} alt=""/>
                                         <img className='TextboxBlackboard' src={Blackboard} alt=""/>
-                                       <div className='blackboardTextTitle'>Home</div>
-                                               <div className='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
-                                       </div>
+                                       <div className='blackboardTextTitle'>Food</div>
+                                       <div className='blackboardText'> Stop in for lunch and try one of our ice cold cherry limeades, grilled chicke wraps, or a bowl of homeade ice cream! Other fan favorites include malts, freshly made sandwiches, and fountain drinks. City Sundries is know for their homemade ice cream, with new flavors available every week! Come try some before it's gone! </div>   
+                                            </div>
                                    </ParallaxLayer>
                                    
                                    <ParallaxLayer sticky={{ start: 2.4, end: 2.74 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
@@ -268,7 +268,7 @@ export class Home extends React.Component {
                                 </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={IMG_8855} className='imgRight' alt=""/>
+                                <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
        
        
@@ -306,8 +306,8 @@ export class Home extends React.Component {
                                        <div className='textboxLeft'>
                                        <img className='TextboxBackboard' src={Backboard} alt=""/>
                                         <img className='TextboxBlackboard' src={BlackboardPhone} alt=""/>
-                                       <div className='blackboardTextTitle'>Home</div>
-                                               <div className='blackboardText'>Stop by City Sundries in beautiful downtown Marquette for fresh-made sandwiches, unique gifts, and homemade ice cream! With original interior from its opening in the early 1900’s, the soda fountain and gift shop is a must see. Featuring original interior including soda fountain, marble tables, wood and glass cases, and tile floor. City Sundries is a unique and friendly space to spend the day. City Sundries can also take care of your special occasions with cards, same day balloon orders, and custom tee shirt designs! Local gift delivery is always free!</div>
+                                       <div className='blackboardTextTitle'>Food</div>
+                                       <div className='blackboardText'> Stop in for lunch and try one of our ice cold cherry limeades, grilled chicke wraps, or a bowel of homeade ice cream! Other fan favorites include malts, freshly made sandwiches, and fountain drinks. City Sundries is know for their homemade ice cream, with new flavors available every week! Come try some before it's gone! </div>
                                        </div>
                                    </ParallaxLayer>
                                    
@@ -375,7 +375,7 @@ export class Home extends React.Component {
                                 </div>
                             </ParallaxLayer>
                             <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
-                                <img src={IMG_8855} className='imgRight' alt=""/>
+                                <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
        
        

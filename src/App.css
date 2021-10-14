@@ -35,6 +35,7 @@ body {
 }
 
 .WhiteScreen{
+  pointer-events: none;
   height: 100%;
   width: 100%;
   animation: fadeOut 2s ease-in;
@@ -523,20 +524,23 @@ section {
   padding: 30% 10%;
   align-items:center;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 .sectionThree{
   background: gainsboro;
   position: absolute;
   z-index: 0;
-  clip-path: polygon(0 45%, 92% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 45%, 100% 0%, 100% 100%, 0% 100%);
   margin-top: -30.5%;
   padding: 30% 10%;
   align-items:center;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   max-width: 100%;
+
+  overflow-x: hidden;
 }
 .HistoryCont{
   background: #A8D2C8;
@@ -687,17 +691,26 @@ section {
     width: 97%;
     height: auto;
     max-width: 97%;
+    margin:1.5%;
   }
   .imgRight{
     width: 97%;
     height: auto;
     max-width: 97%;
+    margin:1.5%;
+  }
+  .imgLeftBottom{
+    width: 97%;
+    height: auto;
+    max-width: 97%;
+    margin:1.5%;
   }
   .imgRightBottom
   {
     width: 97%;
     height: auto;
     max-width: 97%;
+    margin:1.5%;
   }
   .textboxLeft{
     width: 97%;
