@@ -5,6 +5,7 @@ import {History} from "./Pages/History.jsx";
 import Navbar from "./Pages/Navbar";
 import {Home} from "./Pages/Home";
 import {Menu} from "./Pages/Menu";
+import PrivacyPage from "./Pages/PrivacyPage"
 import {SplashScreen} from "./Pages/SplashScreen";
 
 export default class App extends React.Component {
@@ -42,6 +43,10 @@ render(){
 
             <Route path="/menu">
               <Menu />
+            </Route>
+
+            <Route path="/PrivacyPage">
+              <PrivacyPage />
             </Route>
 
             <Route path="/">

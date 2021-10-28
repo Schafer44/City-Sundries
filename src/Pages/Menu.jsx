@@ -4,6 +4,8 @@ import Menu1 from './Pictures/MenuPart1.jpeg';
 import Menu2 from './Pictures/MenuPart2.jpeg';
 import Menu3 from './Pictures/MenuPart3.jpeg';
 import Backboard from './Pictures/Backboard.jpg';
+import {Footer} from "./Footer";
+
 export class Menu extends React.Component {
     constructor(props) {
         super(props);
@@ -36,6 +38,7 @@ export class Menu extends React.Component {
                     <img className='backBoard' src={Backboard} alt=""/>
                     <img className='blackBoard' src={Blackboard} alt=""/>
                 </div>
+                <Footer PageTracker={'Menu'}/>
             </>
         );
     }
@@ -54,7 +57,9 @@ export class Menu extends React.Component {
                     <img className='blackBoardPhoneThree' src={Menu3} alt=""/>
                 </div>
                 <br></br>
+                <Footer PageTracker={'Menu'}/>
             </div>
+           
             </>
         );
     }

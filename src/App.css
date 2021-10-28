@@ -115,7 +115,7 @@ position: relative;
 }
 .blackBoard {
   margin-top:3%;
-  position: fixed;
+  position: absolute;
   display: block;
   width: auto;
   height: auto;
@@ -585,6 +585,62 @@ section {
   width: 86%;
 }
 
+
+.Footer{
+  position: absolute; 
+  z-index: 4;
+  background-color:#A8D2C8;
+  width:101%;
+  border-color: #A8D2C8;
+  height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
+  bottom: -9.1rem;
+}
+.Footer-Menu{
+  position: absolute; 
+  z-index: 4;
+  background-color:#A8D2C8;
+  width:101%;
+  border-color: #A8D2C8;
+  height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
+  bottom: -4.1rem;
+}
+.Footer-History{
+  position: relative; 
+  z-index: 4;
+  background-color:#A8D2C8;
+  width:101%;
+  border-color: #A8D2C8;
+  height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
+  bottom: -4.1rem;
+}
+.Footer-Home{
+  position: absolute; 
+  z-index: 20;
+  background-color:#A8D2C8;
+  width:101%;
+  border-color: #A8D2C8;
+  height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
+  bottom: 0rem;
+}
+
+.Footer-PrivacyPage{
+  position: relative; 
+  z-index: 20;
+  background-color:#A8D2C8;
+  width:101%;
+  border-color: #A8D2C8;
+  height: 4.1rem;
+  box-shadow: black 0px .2rem .4rem .5rem;
+  bottom: 0rem;
+}
+.Policy{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 @media only screen and (min-width:600px){
   .NavbarButtons{
     margin-left: 15vw;
@@ -620,7 +676,10 @@ section {
 }
 
 @media only screen and (max-width:600px){
-
+  .Footer-Menu{
+    position: relative;
+    bottom: 0rem;
+  }
   .HistoryText{
     font-size: 4vw;
   }

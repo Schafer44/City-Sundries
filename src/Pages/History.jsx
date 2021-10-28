@@ -2,6 +2,7 @@ import React from "react";
 import HistoryV2 from './Pictures/HistoryV2.jpeg';
 import Backboard from './Pictures/BackboardSquare.jpg';
 import Blackboard from './Pictures/BlackboardSquare.jpg';
+import {Footer} from "./Footer";
 
 export class History extends React.Component {
   constructor(props) {
@@ -30,6 +31,7 @@ export class History extends React.Component {
         <div class="HistoryText">Spend the day in historic Marquette to visit City Sundries and all of our Main Street attractions! Marquette features a range schoolhouse museum, railroad museum, the Kansas Motorcycle Museum. You can also stop into the Smoky Valley Distillery, swim at the town pool, or play a round of disc golf in our 18 hole course. Come see all that we have to offer!</div>
         </div>
         <div class="filler"></div>
+        <Footer PageTracker={'History'}/>
       </div>
     </div>
       );

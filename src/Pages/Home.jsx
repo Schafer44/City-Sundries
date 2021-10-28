@@ -20,6 +20,7 @@ import IMG_8889 from './Pictures/IMG_8889.jpeg';
 import IMG_8884 from './Pictures/IMG_8884.jpeg';
 import IMG_8870 from './Pictures/IMG_8870.jpeg';
 import IMG_8855 from './Pictures/IMG_8855.jpeg';
+import {Footer} from "./Footer";
 
 export class Home extends React.Component {
 
@@ -163,6 +164,9 @@ export class Home extends React.Component {
                             <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
                                 <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
+                            <ParallaxLayer sticky={{ start: 5.5, end: 6 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                            <Footer PageTracker={'Home'}/>
+                            </ParallaxLayer>
                             </Parallax>
                         </animated.div>
                     ) 
@@ -271,8 +275,9 @@ export class Home extends React.Component {
                                 <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
        
-       
-                                  
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                            <Footer PageTracker={'Home'}/>
+                            </ParallaxLayer>
                                    </Parallax>
                                </animated.div>
                            ) 
@@ -378,8 +383,9 @@ export class Home extends React.Component {
                                 <img src={IMG_8855} className='imgLeftBottom' alt=""/>
                             </ParallaxLayer>
        
-       
-                                  
+                            <ParallaxLayer sticky={{ start: 10.2, end: 10.54 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-start',alignItems: 'center',color: 'white', }}>
+                            <Footer PageTracker={'Home'}/>
+                            </ParallaxLayer>
                                    </Parallax>
                                </animated.div>
                            ) 
