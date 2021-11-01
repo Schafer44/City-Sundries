@@ -9,7 +9,7 @@ export default function PrivacyPage() {
             <br></br>
             <br></br>
             <br></br>
-            
+            <div className='PriBackgroud'>
             <h2>Privacy Policy</h2>
             <p>Your privacy is important to us. It is City Sundries&#39; policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, <a href="https://www.CitySundries.com">https://www.CitySundries.com</a>, and other sites we own and operate. </p>
             <p>This policy is effective as of 26 October 2021 and was last updated on 26 October 2021. </p>
@@ -53,6 +53,10 @@ export default function PrivacyPage() {
             <p>For any questions or concerns regarding your privacy, you may contact us using the following details: </p>
             <p>Tanner Schafer<br />
             Tanner44Schafer@gmail.com </p>
+
+            <br></br>
+            <br></br>
+            </div>
         </div>
         <Footer PageTracker={'PrivacyPage'}/>
         </>

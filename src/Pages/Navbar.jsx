@@ -16,8 +16,8 @@ export default function Navbar() {
              >
                 {props => (
                      <animated.div style={props}>
-                <nav className = 'Navbar'>
-                    <ul className='navbar-nav'>
+                <nav className = 'Navbar' >
+                    <ul className='navbar-nav' >
                         <li>
                             <img className= "navbarImg" z-index="2" src={Logo}alt=""/>
                         </li>

@@ -235,11 +235,11 @@ export class Home extends React.Component {
        
                                        </div>
                                    </ParallaxLayer>
-                                   <ParallaxLayer sticky={{ start: 7.6, end: 7.94 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 7.6, end: 7.94 }} speed={1}style={{ zIndex:6,display: 'flex',alignItems: 'center',color: 'white' }}>
                                        <img src={Services} className='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 
-                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white', }}>
+                                   <ParallaxLayer sticky={{ start: 8.9, end: 9.24 }} speed={1}style={{ zIndex:6,display: 'flex',alignItems: 'center',color: 'white', }}>
 
                                 <div className='textboxLeft'>
                                 <img className='TextboxBackboard' src={Backboard} alt=""/>
@@ -316,7 +316,7 @@ export class Home extends React.Component {
                                        </div>
                                    </ParallaxLayer>
                                    
-                                   <ParallaxLayer sticky={{ start: 2.4, end: 3.1 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 2.4, end: 3.1 }} speed={1}style={{ zIndex:6,display: 'flex',alignItems: 'center',color: 'white' }}>
                                        <img src={IcecreamPhone} className='imgRight' alt=""/>
                                    </ParallaxLayer>
                                    
@@ -343,7 +343,7 @@ export class Home extends React.Component {
        
                                        </div>
                                    </ParallaxLayer>
-                                   <ParallaxLayer sticky={{ start: 7.6, end: 8.3 }} speed={1}style={{ zIndex:6,display: 'flex',justifyContent: 'flex-end',alignItems: 'center',color: 'white' }}>
+                                   <ParallaxLayer sticky={{ start: 7.6, end: 8.3 }} speed={1}style={{ zIndex:6,display: 'flex',alignItems: 'center',color: 'white' }}>
                                        <img src={ServicesPhone} className='imgRightBottom' alt=""/>
                                    </ParallaxLayer>
 

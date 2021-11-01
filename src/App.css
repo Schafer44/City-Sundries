@@ -111,7 +111,7 @@ list-style: none;
 padding:0;
 margin: 0;
 display: flex;
-position: relative;
+position: fixed;
 }
 .blackBoard {
   margin-top:3%;
@@ -592,9 +592,9 @@ section {
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
-  height: 4.1rem;
+  height: 5.1rem;
   box-shadow: black 0px .2rem .4rem .5rem;
-  bottom: -9.1rem;
+  bottom: -10.1rem;
 }
 .Footer-Menu{
   position: absolute; 
@@ -602,9 +602,9 @@ section {
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
-  height: 4.1rem;
+  height: 5.1rem;
   box-shadow: black 0px .2rem .4rem .5rem;
-  bottom: -4.1rem;
+  bottom: -5.1rem;
 }
 .Footer-History{
   position: relative; 
@@ -612,9 +612,9 @@ section {
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
-  height: 4.1rem;
+  height: 5.1rem;
   box-shadow: black 0px .2rem .4rem .5rem;
-  bottom: -4.1rem;
+  bottom: -5.1rem;
 }
 .Footer-Home{
   position: absolute; 
@@ -622,7 +622,7 @@ section {
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
-  height: 4.1rem;
+  height: 5.1rem;
   box-shadow: black 0px .2rem .4rem .5rem;
   bottom: 0rem;
 }
@@ -633,13 +633,52 @@ section {
   background-color:#A8D2C8;
   width:101%;
   border-color: #A8D2C8;
-  height: 4.1rem;
+  height: 5.1rem;
   box-shadow: black 0px .2rem .4rem .5rem;
   bottom: 0rem;
 }
 .Policy{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+}
+
+.facebook{
+  position: absolute;
+  z-index: 100;
+  left:0%;
+  top:0%;
+  margin-left: 1%;
+  color: #0000;
+}
+
+.facebook:hover{
+  fill: white;
+}
+
+.privacyLink{
+  position: absolute; 
+  bottom:10%;
+  left: 2%;
+  color: black;
+}
+.privacyLink:link {
+  text-decoration: none;
+}
+.privacyLink:hover{
+  text-decoration: underline;
+}
+
+.Copyright{
+  position: absolute; 
+  color: white;
+  bottom:10%;
+  right: 0;
+  margin-right: 2%;
+}
+.PriBackgroud{
+  background-color: white;
+  margin: 10%;
 }
 @media only screen and (min-width:600px){
   .NavbarButtons{
@@ -676,6 +715,16 @@ section {
 }
 
 @media only screen and (max-width:600px){
+
+  .privacyLink{
+    bottom:50%;
+    left: 45%;
+  }
+  .Copyright{
+    left: 25%;
+    bottom: 20%;
+  }
+
   .Footer-Menu{
     position: relative;
     bottom: 0rem;
@@ -756,8 +805,11 @@ section {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin:1.5%;
+    margin-left:1.5%;
   }
+  
+
+
   .imgLeftBottom{
     width: 97%;
     height: auto;
@@ -769,7 +821,7 @@ section {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin:1.5%;
+    margin-left:1.5%;
   }
   .textboxLeft{
     width: 97%;

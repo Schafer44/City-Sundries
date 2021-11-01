@@ -12,7 +12,7 @@ export class History extends React.Component {
 }
     render() {
       return (
-    <div>
+    <div className="hello" >
        <div class="WhiteScreen"></div>
       <img className="HistoryImage"src={HistoryV2} alt=""/>
       <div class="sectionTwo"></div>
