@@ -3,90 +3,103 @@
 }
 body {
   background-color: #223850;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   /* Hide scrollbars */
 }
-.LogoSplashScreen{
+.LogoSplashScreen {
   position: fixed;
   display: block;
   width: auto;
   height: auto;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  max-width:85%;
-  max-height:85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+  max-height: 85%;
   animation: fade 4s ease-in;
   animation-fill-mode: forwards;
 }
 
-.LogoSplashScreenHome{
+.LogoSplashScreenHome {
   position: fixed;
   display: block;
   width: auto;
   height: auto;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  max-width:85%;
-  max-height:85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+  max-height: 85%;
   animation: fadeOut 2s ease-in;
   animation-fill-mode: forwards;
 }
 
-.WhiteScreen{
+.WhiteScreen {
   pointer-events: none;
   height: 100%;
   width: 100%;
   animation: fadeOut 2s ease-in;
-  background-color: #A8D2C8;
+  background-color: #a8d2c8;
   position: fixed;
   z-index: 20;
-  top:0;
+  top: 0;
   animation-fill-mode: forwards;
-
-  }
-.SplashScreenDiv{
-  background-color: #A8D2C8;
+}
+.SplashScreenDiv {
+  background-color: #a8d2c8;
   height: 100%;
-  width:100%;
+  width: 100%;
   position: absolute;
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
-  0% {z-index: 20;}
-  100%{z-index: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  0% {
+    z-index: 20;
+  }
+  100% {
+    z-index: 0;
+  }
 }
 @keyframes fade {
-  0%,90%,100% { opacity: 0 }
-  40%,60% { opacity: 1 }
+  0%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+  40%,
+  60% {
+    opacity: 1;
+  }
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 0.6rem;
 }
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   background: rgb(54, 54, 54);
 }
-body::-webkit-scrollbar-thumb{
-background: rgb(194, 193, 193);
-border-radius:100px;
-
+body::-webkit-scrollbar-thumb {
+  background: rgb(194, 193, 193);
+  border-radius: 100px;
 }
 
-:root{
+:root {
   --magic-number: 1.11858047211;
-	--content-width: 100vw;
-	--skew-padding: calc(var(--content-width) * var(--magic-number));
+  --content-width: 100vw;
+  --skew-padding: calc(var(--content-width) * var(--magic-number));
   height: 100%;
   width: 100%;
   font-size: 16px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
 }
 .image-gallery {
   width: 100%;
@@ -96,35 +109,35 @@ border-radius:100px;
   width: 85%;
   height: auto;
 }
-.image-gallery-thumbnail{
+.image-gallery-thumbnail {
   margin-top: 80vh;
   margin-left: 10%;
 }
 
-.navbarImg{
+.navbarImg {
   position: fixed;
   width: 4rem;
   height: 4rem;
 }
-.navbar-nav{
-list-style: none;
-padding:0;
-margin: 0;
-display: flex;
-position: fixed;
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: fixed;
 }
 .blackBoard {
-  margin-top:3%;
+  margin-top: 3%;
   position: absolute;
   display: block;
   width: auto;
   height: auto;
-  max-width:85%;
-  max-height:85%;
-  
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  max-width: 85%;
+  max-height: 85%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .blackBoardPhoneOne {
   z-index: 1;
@@ -133,31 +146,31 @@ position: fixed;
   display: block;
   width: auto;
   height: auto;
-  max-width:85%;
-  max-height:85%;
-  transform:translate(-0%, 25%);
+  max-width: 85%;
+  max-height: 85%;
+  transform: translate(-0%, 25%);
 }
 .blackBoardPhoneTwo {
   z-index: 1;
-  margin-top:24%;
+  margin-top: 24%;
   margin-left: 7.5%;
   position: relative;
   display: block;
   width: auto;
   height: auto;
-  max-width:85%;
-  max-height:85%;
+  max-width: 85%;
+  max-height: 85%;
 }
 .blackBoardPhoneThree {
   z-index: 1;
-  margin-top:3%;
+  margin-top: 3%;
   margin-left: 7.5%;
   position: relative;
   display: block;
   width: auto;
   height: auto;
-  max-width:85%;
-  max-height:85%;
+  max-width: 85%;
+  max-height: 85%;
 }
 .backBoardPhoneOne {
   position: fixed;
@@ -178,22 +191,20 @@ position: fixed;
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width:100%;
-  max-height:100%;
-  
+  max-width: 100%;
+  max-height: 100%;
 }
 .TextboxBackboard {
   position: fixed;
   display: block;
-  border-radius:20px;
+  border-radius: 20px;
   float: left;
   width: auto;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 47.5%;
   margin-top: 2.5%;
-  
 }
 .TextboxBlackboard {
   position: fixed;
@@ -201,12 +212,11 @@ position: fixed;
   float: left;
   width: auto;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 42.5%;
   margin-top: 2.5%;
   margin-left: 2.5%;
-  
 }
 .TextboxBlackboardHistory {
   position: absolute;
@@ -214,28 +224,26 @@ position: fixed;
   float: left;
   width: 92%;
   height: 110%;
-  top:45%;
-  transform:translate(-0%, -50%);
+  top: 45%;
+  transform: translate(-0%, -50%);
   margin-top: 2.5%;
   margin-left: 4%;
-  
 }
 .TextboxBackboardHistory {
-  border-radius:20px;
+  border-radius: 20px;
   position: absolute;
   display: block;
   float: left;
   width: 96%;
   height: 120%;
-  top:45%;
-  transform:translate(-0%, -50%);
+  top: 45%;
+  transform: translate(-0%, -50%);
   margin-top: 2.5%;
   margin-left: 2%;
   z-index: 0;
-  
 }
 
-.spacer{
+.spacer {
   aspect-ratio: 540/960;
   width: 100%;
   right: 0;
@@ -244,18 +252,18 @@ position: fixed;
   z-index: 1;
   position: relative;
 }
-.layer1{
-  background-image:url(./wave-haikei-two.svg);
+.layer1 {
+  background-image: url(./wave-haikei-two.svg);
 }
-.historyText{
+.historyText {
   margin-top: 10%;
-  right:0;
+  right: 0;
   margin-left: 80%;
   position: absolute;
   z-index: 10;
   text-align: left;
 }
-.spacer2{
+.spacer2 {
   aspect-ratio: 540/960;
   width: 100%;
   background-repeat: no-repeat;
@@ -263,162 +271,167 @@ position: fixed;
   z-index: 2;
   position: fixed;
 }
-.layer2{
-  background-image:url(./wave-haikei-mobile.svg);
+.layer2 {
+  background-image: url(./wave-haikei-mobile.svg);
 }
 
-
-
-
-.Navbar{
-  position: fixed; 
+.Navbar {
+  position: fixed;
   z-index: 4;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 4.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
 }
-.navLogo{
-  margin-left:10px ;
+.navLogo {
+  margin-left: 10px;
 }
-.NavbarButtons{
-  position: sticky; 
+.NavbarButtons {
+  position: sticky;
   align-content: center;
-  background-color: #A8D2C8;
-  cursor: pointer; 
+  background-color: #a8d2c8;
+  cursor: pointer;
   display: inline-block;
   margin-right: 10%;
 }
-.link{
+.link {
   position: relative;
   text-decoration: none;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   display: flex;
 }
-.link:visited { text-decoration: none; color: #000;}
-.link:hover { text-decoration: none; }
-.link:focus { text-decoration: none; }
-.link:hover, .link:active { text-decoration: none; }
+.link:visited {
+  text-decoration: none;
+  color: #000;
+}
+.link:hover {
+  text-decoration: none;
+}
+.link:focus {
+  text-decoration: none;
+}
+.link:hover,
+.link:active {
+  text-decoration: none;
+}
 
-li{
-  display: inline-block
+li {
+  display: inline-block;
 }
-.imgLeft{
+.imgLeft {
   position: fixed;
   display: block;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: left;
   margin-left: 2%;
   width: auto;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 47.5%;
   margin-top: 2.5%;
-
 }
-.textboxLeft{
-  border-radius:20px;
+.textboxLeft {
+  border-radius: 20px;
   display: block;
   float: left;
-  width:47.5%; 
-  padding-bottom:47.5%;
-  top:50%;
+  width: 47.5%;
+  padding-bottom: 47.5%;
+  top: 50%;
   margin-left: 2%;
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
   margin-top: 5%;
-  
 }
-.textboxLeftBottom{
-  border-radius:20px;
+.textboxLeftBottom {
+  border-radius: 20px;
   display: block;
   float: left;
-  width:47.5%; 
+  width: 47.5%;
   margin-top: 5%;
   margin-left: 2%;
-  padding-bottom:47.5%;
-  top:50%;
+  padding-bottom: 47.5%;
+  top: 50%;
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
 }
-.imgRightBottom{
+.imgRightBottom {
   position: fixed;
   display: block;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: left;
   margin-right: 2%;
   width: auto;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 47.5%;
   margin-top: 2.5%;
 }
-.textboxRightBottom{
-  border-radius:20px;
+.textboxRightBottom {
+  border-radius: 20px;
   display: block;
   float: right;
-  width:47.5%; 
+  width: 47.5%;
   margin-top: 5%;
   margin-right: 2%;
-  padding-bottom:47.5%;
-  top:50%;
+  padding-bottom: 47.5%;
+  top: 50%;
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
 }
-.imgLeftBottom{
+.imgLeftBottom {
   position: fixed;
   display: block;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: left;
   width: auto;
   margin-left: 2%;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 47.5%;
   margin-top: 2.5%;
 }
-.textboxRight{
-  border-radius:20px;
+.textboxRight {
+  border-radius: 20px;
   display: block;
   float: right;
-  width:47.5%; 
+  width: 47.5%;
   margin-right: 2%;
-  padding-bottom:47.5%;
-  top:50%;
+  padding-bottom: 47.5%;
+  top: 50%;
   height: 0;
   max-width: 47.5%;
   max-height: 47.5%;
   margin-top: 5%;
 }
-.imgRight{
+.imgRight {
   position: fixed;
   display: block;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: right;
   margin-right: 2%;
   width: auto;
   height: auto;
-  top:50%;
-  transform:translate(-0%, -50%);
+  top: 50%;
+  transform: translate(-0%, -50%);
   max-width: 47.5%;
   margin-top: 2.5%;
 }
-.imgMiddle{
+.imgMiddle {
   position: absolute;
   display: block;
   margin-top: 5%;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: right;
   width: auto;
@@ -426,11 +439,11 @@ li{
   max-width: 33%;
   z-index: 4;
 }
-.backboardMiddle{
+.backboardMiddle {
   position: absolute;
   display: block;
   margin-top: 7%;
-  border-radius:20px;
+  border-radius: 20px;
   background: white;
   float: right;
   width: auto;
@@ -438,83 +451,81 @@ li{
   max-width: 40%;
   z-index: 4;
 }
-.blackboardText{
+.blackboardText {
   font-family: chalkboard;
   color: #e0e0e0;
   font-size: 11px;
   font-size: 1.9vw;
-  margin:7%;
-  position:relative;
+  margin: 7%;
+  position: relative;
   z-index: 10;
   text-align: center;
   width: 86%;
 }
-.blackboardTextTitle{
+.blackboardTextTitle {
   font-family: chalkboard;
   text-align: center;
   color: #e0e0e0;
   font-size: 11px;
   font-size: 1.9vw;
-  margin:7%;
-  position:relative;
+  margin: 7%;
+  position: relative;
   z-index: 10;
   width: 86%;
 }
-.ItemHead{
+.ItemHead {
   z-index: 10;
-grid-area: header;
+  grid-area: header;
 }
-.itemMain{
-grid-area: main;
+.itemMain {
+  grid-area: main;
 }
 
-.grid{
+.grid {
   display: grid;
-  border-radius:20px;
-  grid-template-areas:p 'header header header''main main main''main main main';
+  border-radius: 20px;
+  grid-template-areas: p "header header header" "main main main" "main main main";
   grid-gap: 1rem;
   background: white;
 }
-.HistoryImage{
-  margin-top:5%;
-  width:100%;
+.HistoryImage {
+  margin-top: 5%;
+  width: 100%;
   height: auto;
   max-width: 100%;
-  
 }
-.mainGrid{
+.mainGrid {
   margin: 10px;
-  border-radius:20px;
+  border-radius: 20px;
   display: grid;
   gap: 1rem;
   background: #223850;
 }
 
-.grid > div{
+.grid > div {
   background: white;
   text-align: center;
 }
-.HistoryImgWrapper
-{
+.HistoryImgWrapper {
   height: 100px;
-    width:100px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: 20% 10%; /* try 20px 10px */ 
+  width: 100px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 20% 10%; /* try 20px 10px */
 }
 section {
-  background: #A8D2C8;
+  background: #a8d2c8;
   position: relative;
   color: white;
   clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
   margin-top: -28%;
   padding: 30% 10%;
-  align-items:center;
+  align-items: center;
   overflow: hidden;
   max-width: 100%;
   z-index: 0;
 }
-.sectionTwo{
+.sectionTwo {
   background: #223850;
   position: absolute;
   z-index: 0;
@@ -522,28 +533,28 @@ section {
   clip-path: polygon(0 44%, 100% 0%, 100% 100%, 0% 100%);
   margin-top: -32%;
   padding: 30% 10%;
-  align-items:center;
+  align-items: center;
   overflow: hidden;
   width: 80%;
   max-width: 100%;
   overflow-x: hidden;
 }
-.sectionThree{
+.sectionThree {
   background: gainsboro;
   position: absolute;
   z-index: 0;
   clip-path: polygon(0 45%, 100% 0%, 100% 100%, 0% 100%);
   margin-top: -30.5%;
   padding: 30% 10%;
-  align-items:center;
+  align-items: center;
   overflow: hidden;
   width: 80%;
   max-width: 100%;
 
   overflow-x: hidden;
 }
-.HistoryCont{
-  background: #A8D2C8;
+.HistoryCont {
+  background: #a8d2c8;
   width: 100%;
   z-index: 0;
   margin-top: -28%;
@@ -551,312 +562,421 @@ section {
   align-items: center;
   height: auto;
 }
-.filler{
- height: 15%;
- width: 100%;
- background: #A8D2C8;
- position: absolute;
- z-index: -1;
+.filler {
+  height: 15%;
+  width: 100%;
+  background: #a8d2c8;
+  position: absolute;
+  z-index: -1;
 }
-.HistoryTextbox{
+.HistoryTextbox {
   margin-left: 2%;
   margin-right: 2%;
 }
-.HistoryText{
+.HistoryText {
   font-family: chalkboard;
   color: #e0e0e0;
   font-size: 11px;
   font-size: 1.9vw;
-  margin-left:4%;
-  position:relative;
+  margin-left: 4%;
+  position: relative;
   z-index: 2;
   text-align: center;
   width: 86%;
 }
-.HistoryTextPhone{
+.HistoryTextPhone {
   font-family: chalkboard;
   color: #e0e0e0;
   font-size: 20px;
   font-size: 4vw;
-  margin-left:4%;
-  position:relative;
+  margin-left: 4%;
+  position: relative;
   z-index: 2;
   text-align: center;
   width: 86%;
 }
 
-
-.Footer{
-  position: absolute; 
+.Footer {
+  position: absolute;
   z-index: 4;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 5.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
   bottom: -10.1rem;
 }
-.Footer-Menu{
-  position: absolute; 
+.Footer-Menu {
+  position: absolute;
   z-index: 4;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 5.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
   bottom: -5.1rem;
 }
-.Footer-History{
-  position: relative; 
+.Footer-History {
+  position: relative;
   z-index: 4;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 5.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
   bottom: -5.1rem;
 }
-.Footer-Home{
-  position: absolute; 
+.Footer-Home {
+  position: absolute;
   z-index: 20;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 5.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
   bottom: 0rem;
 }
 
-.Footer-PrivacyPage{
-  position: relative; 
+.Footer-PrivacyPage {
+  position: relative;
   z-index: 20;
-  background-color:#A8D2C8;
-  width:101%;
-  border-color: #A8D2C8;
+  background-color: #a8d2c8;
+  width: 101%;
+  border-color: #a8d2c8;
   height: 5.1rem;
-  box-shadow: black 0px .2rem .4rem .5rem;
+  box-shadow: black 0px 0.2rem 0.4rem 0.5rem;
   bottom: 0rem;
 }
-.Policy{
+.Policy {
   margin-left: 5%;
   margin-right: 5%;
   background-color: white;
 }
 
-.facebook{
+.facebook {
   position: absolute;
   z-index: 100;
-  left:0%;
-  top:0%;
+  left: 0%;
+  top: 0%;
   margin-left: 1%;
   color: #0000;
 }
 
-.facebook:hover{
+.facebook:hover {
   fill: white;
 }
 
-.privacyLink{
-  position: absolute; 
-  bottom:10%;
+.privacyLink {
+  position: absolute;
+  bottom: 10%;
   left: 2%;
   color: black;
 }
 .privacyLink:link {
   text-decoration: none;
 }
-.privacyLink:hover{
+.privacyLink:hover {
   text-decoration: underline;
 }
 
-.Copyright{
-  position: absolute; 
+.Copyright {
+  position: absolute;
   color: white;
-  bottom:10%;
+  bottom: 10%;
   right: 0;
   margin-right: 2%;
 }
-.PriBackgroud{
+.PriBackgroud {
   background-color: white;
   margin: 10%;
 }
-@media only screen and (min-width:600px){
-  .NavbarButtons{
+
+@media only screen and (min-width: 600px) {
+  .NavbarButtons {
     margin-left: 15vw;
     width: 25vw;
     margin-bottom: 4x;
   }
-  .link{
+  .link {
     margin-left: 13vw;
     width: 25vw;
     margin-bottom: 4x;
   }
-.imgLeft{
-  max-width: 47.5%;
-}
-.textboxLeft{
-  max-width: 47.5%;
-}
-.textboxLeftBottom{
-  max-width: 47.5%;
-}
-.textboxRightBottom{
-  max-width: 47.5%;
-}
-.imgRightBottom{
-  max-width: 47.5%;
-}
-.textboxRight{
-  max-width: 47.5%;
-}
-.imgRight{
-  max-width: 47.5%;
-}
+  .imgLeft {
+    max-width: 47.5%;
+  }
+  .textboxLeft {
+    max-width: 47.5%;
+  }
+  .textboxLeftBottom {
+    max-width: 47.5%;
+  }
+  .textboxRightBottom {
+    max-width: 47.5%;
+  }
+  .imgRightBottom {
+    max-width: 47.5%;
+  }
+  .textboxRight {
+    max-width: 47.5%;
+  }
+  .imgRight {
+    max-width: 47.5%;
+  }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+  .imgLeft {
+    max-width: 600px;
+    margin-left: 2.5%;
+  }
+  .imgLeftBottom {
+    max-width: 600px;
+    margin-left: 2.5%;
+  }
+  .textboxLeft {
+    max-width: 525px;
+    margin-left: 2.55%;
+    height: auto;
+  }
+  .textboxLeftBottom {
+    max-width: 525px;
+    margin-left: 2.55%;
 
-  .privacyLink{
-    bottom:50%;
+    height: auto;
+  }
+  .textboxRightBottom {
+    max-width: 525px;
+    margin-right: 6.5%;
+    height: auto;
+  }
+  .imgRightBottom {
+    max-width: 600px;
+    margin-right: 2.55%;
+  }
+  .textboxRight {
+    max-width: 525px;
+    margin-right: 6.5%;
+    height: auto;
+  }
+  .imgRight {
+    max-width: 600px;
+    margin-right: 2.5%;
+  }
+  .TextboxBlackboard {
+    max-width: 525px;
+    max-height: 525px;
+  }
+  .TextboxBackboard {
+    height: 600px;
+    width: 600px;
+  }
+  .blackboardTextTitle {
+    font-size: 25px;
+    left: 10%;
+    margin-top: 45%;
+    height: 50%;
+  }
+  .blackboardText {
+    font-size: 16px;
+    bottom: 0;
+    margin-left: 15%;
+    margin-bottom: -100%;
+    height: 50%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .imgLeft {
+    max-width: 900px;
+    margin-left: 2.5%;
+  }
+  .imgLeftBottom {
+    width: 900px;
+    margin-left: 2.5%;
+  }
+  .textboxLeft {
+    max-width: 900px;
+    margin-left: 2.5%;
+  }
+  .textboxLeftBottom {
+    max-width: 900px;
+    margin-left: 2.5%;
+  }
+  .textboxRightBottom {
+    max-width: 900px;
+    margin-right: 2.5%;
+  }
+  .imgRightBottom {
+    max-width: 900px;
+    margin-right: 2.5%;
+  }
+  .textboxRight {
+    max-width: 900px;
+    margin-right: 2.5%;
+  }
+  .imgRight {
+    max-width: 900px;
+    margin-right: 2.5%;
+  }
+  .TextboxBlackboard {
+    max-width: 800px;
+    max-height: 800px;
+  }
+  .TextboxBackboard {
+    height: 900px;
+    width: 900px;
+  }
+  .blackboardTextTitle {
+    font-size: 25px;
+    left: 0%;
+    margin-top: 45%;
+
+    height: 50%;
+  }
+  .blackboardText {
+    font-size: 16px;
+    bottom: 0;
+    margin-bottom: -100%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .privacyLink {
+    bottom: 50%;
     left: 45%;
   }
-  .Copyright{
+  .Copyright {
     left: 25%;
     bottom: 20%;
   }
 
-  .Footer-Menu{
+  .Footer-Menu {
     position: relative;
     bottom: 0rem;
   }
-  .HistoryText{
+  .HistoryText {
     font-size: 4vw;
   }
 
-  .HistoryTextbox{
+  .HistoryTextbox {
     margin-left: 2%;
     margin-top: 20%;
     margin-right: 2%;
   }
-  .spacer{
+  .spacer {
     overflow-x: hidden;
   }
-  .layer1{
+  .layer1 {
     aspect-ratio: 9/20;
- right:-30%;
- overflow-x: hidden;
- max-height: 100%;
+    right: -30%;
+    overflow-x: hidden;
+    max-height: 100%;
   }
-  .HistoryImage{
-    height:100%; /* height of container */
+  .HistoryImage {
+    height: 100%; /* height of container */
     overflow: hidden;
-
   }
 
-  .imgMiddle{
+  .imgMiddle {
     max-width: 70%;
   }
-  .backboardMiddle{
+  .backboardMiddle {
     max-width: 80%;
   }
   .TextboxBackboard {
     max-width: 97%;
-    margin-left: -.5%;
+    margin-left: -0.5%;
   }
   .TextboxBlackboard {
     max-width: 90%;
     margin-left: 3%;
   }
 
-  .blackboardText{
-    margin-bottom:1%;
+  .blackboardText {
+    margin-bottom: 1%;
     font-size: 4vw;
-    top:-10%;
+    top: -10%;
   }
-  .blackboardTextTitle{
-    margin-top:3%;
+  .blackboardTextTitle {
+    margin-top: 3%;
     font-size: 4vw;
   }
-  .NavbarButtons{
+  .NavbarButtons {
     margin-left: 20vw;
     width: 10vw;
   }
-  .link{
+  .link {
     margin-left: 20vw;
     width: 10vw;
   }
   .black {
     display: block;
-    max-width:98%;
-    max-height:98%;
+    max-width: 98%;
+    max-height: 98%;
     width: auto;
     height: 100%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .imgLeft{
+  .imgLeft {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
   }
-  .imgRight{
+  .imgRight {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin-left:1.5%;
+    margin-left: 1.5%;
   }
-  
 
-
-  .imgLeftBottom{
+  .imgLeftBottom {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
   }
-  .imgRightBottom
-  {
+  .imgRightBottom {
     width: 97%;
     height: auto;
     max-width: 97%;
-    margin-left:1.5%;
+    margin-left: 1.5%;
   }
-  .textboxLeft{
+  .textboxLeft {
     width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
     height: 25%;
     max-width: 97%;
   }
-  .textboxLeftBottom{
+  .textboxLeftBottom {
     width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
     height: 25%;
     max-width: 97%;
   }
-  .textboxRightBottom{
+  .textboxRightBottom {
     width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
     height: 25%;
     max-width: 97%;
   }
-  .textboxRight{
+  .textboxRight {
     width: 97%;
-    margin:1.5%;
+    margin: 1.5%;
     height: 25%;
     max-width: 97%;
   }
 }
-@media only screen and (max-width:475px){
-
-  .blackboardText{
-    margin-bottom:1%;
+@media only screen and (max-width: 475px) {
+  .blackboardText {
+    margin-bottom: 1%;
     font-size: 4.3vw;
-    top:-10%;
+    top: -10%;
   }
-  .blackboardTextTitle{
-    margin-top:10%;
+  .blackboardTextTitle {
+    margin-top: 10%;
     font-size: 4.2vw;
   }
 }
