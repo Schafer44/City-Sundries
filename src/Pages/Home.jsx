@@ -160,7 +160,7 @@ export class Home extends React.Component {
                       <div className="blackboardText">
                         {" "}
                         Stop in for lunch and try one of our ice cold cherry
-                        limeades, grilled chicke wraps, or a bowel of homeade
+                        limeades, grilled chicken wraps, or a bowl of homeade
                         ice cream! Other fan favorites include malts, freshly
                         made sandwiches, and fountain drinks. City Sundries is
                         know for their homemade ice cream, with new flavors
@@ -438,7 +438,7 @@ export class Home extends React.Component {
                     <div className="blackboardText">
                       {" "}
                       Stop in for lunch and try one of our ice cold cherry
-                      limeades, grilled chicke wraps, or a bowl of homeade ice
+                      limeades, grilled chicken wraps, or a bowl of homeade ice
                       cream! Other fan favorites include malts, freshly made
                       sandwiches, and fountain drinks. City Sundries is know for
                       their homemade ice cream, with new flavors available every
@@ -703,7 +703,7 @@ export class Home extends React.Component {
                     <div className="blackboardText">
                       {" "}
                       Stop in for lunch and try one of our ice cold cherry
-                      limeades, grilled chicke wraps, or a bowel of homeade ice
+                      limeades, grilled chicken wraps, or a bowl of homeade ice
                       cream! Other fan favorites include malts, freshly made
                       sandwiches, and fountain drinks. City Sundries is know for
                       their homemade ice cream, with new flavors available every
