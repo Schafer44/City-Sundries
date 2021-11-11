@@ -195,11 +195,11 @@ body::-webkit-scrollbar-thumb {
   max-height: 100%;
 }
 .TextboxBackboard {
+  object-fit: cover;
   position: fixed;
-  display: block;
   border-radius: 20px;
   float: left;
-  width: auto;
+  width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
@@ -320,13 +320,14 @@ li {
   display: inline-block;
 }
 .imgLeft {
+  object-fit: cover;
   position: fixed;
   display: block;
   border-radius: 20px;
   background: white;
   float: left;
   margin-left: 2%;
-  width: auto;
+  width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
@@ -360,13 +361,14 @@ li {
   max-height: 47.5%;
 }
 .imgRightBottom {
+  object-fit: cover;
   position: fixed;
   display: block;
   border-radius: 20px;
   background: white;
   float: left;
   margin-right: 2%;
-  width: auto;
+  width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
@@ -387,12 +389,13 @@ li {
   max-height: 47.5%;
 }
 .imgLeftBottom {
+  object-fit: cover;
   position: fixed;
   display: block;
   border-radius: 20px;
   background: white;
   float: left;
-  width: auto;
+  width: 100%;
   margin-left: 2%;
   height: auto;
   top: 50%;
@@ -414,13 +417,14 @@ li {
   margin-top: 5%;
 }
 .imgRight {
+  object-fit: cover;
   position: fixed;
   display: block;
   border-radius: 20px;
   background: white;
   float: right;
   margin-right: 2%;
-  width: auto;
+  width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
@@ -724,120 +728,18 @@ section {
     max-width: 47.5%;
   }
 }
-
-@media only screen and (min-width: 1300px) and (max-width: 2000px) {
-  .imgLeft {
-    max-width: 600px;
-    margin-left: 2.5%;
-  }
-  .imgLeftBottom {
-    max-width: 600px;
-    margin-left: 2.5%;
-  }
-  .textboxLeft {
-    max-width: 525px;
-    margin-left: 2.55%;
-    height: auto;
-  }
-  .textboxLeftBottom {
-    max-width: 525px;
-    margin-left: 2.55%;
-
-    height: auto;
-  }
-  .textboxRightBottom {
-    max-width: 525px;
-    margin-right: 6.5%;
-    height: auto;
-  }
-  .imgRightBottom {
-    max-width: 600px;
-    margin-right: 2.55%;
-  }
-  .textboxRight {
-    max-width: 525px;
-    margin-right: 6.5%;
-    height: auto;
-  }
-  .imgRight {
-    max-width: 600px;
-    margin-right: 2.5%;
-  }
-  .TextboxBlackboard {
-    max-width: 525px;
-    max-height: 525px;
-  }
-  .TextboxBackboard {
-    height: 600px;
-    width: 600px;
-  }
-  .blackboardTextTitle {
-    font-size: 25px;
-    left: 10%;
-    margin-top: 45%;
-    height: 50%;
-  }
-  .blackboardText {
-    font-size: 16px;
-    bottom: 0;
-    margin-left: 15%;
-    margin-bottom: -100%;
-    height: 50%;
-  }
-}
 @media only screen and (min-width: 2000px) {
-  .imgLeft {
-    max-width: 900px;
-    margin-left: 2.5%;
+  .TextboxBackboardHistory {
+    top: 35%;
   }
-  .imgLeftBottom {
-    width: 900px;
-    margin-left: 2.5%;
+  .TextboxBlackboardHistory {
+    top: 35%;
   }
-  .textboxLeft {
-    max-width: 900px;
-    margin-left: 2.5%;
+  .filler {
+    height: 0%;
   }
-  .textboxLeftBottom {
-    max-width: 900px;
-    margin-left: 2.5%;
-  }
-  .textboxRightBottom {
-    max-width: 900px;
-    margin-right: 2.5%;
-  }
-  .imgRightBottom {
-    max-width: 900px;
-    margin-right: 2.5%;
-  }
-  .textboxRight {
-    max-width: 900px;
-    margin-right: 2.5%;
-  }
-  .imgRight {
-    max-width: 900px;
-    margin-right: 2.5%;
-  }
-  .TextboxBlackboard {
-    max-width: 800px;
-    max-height: 800px;
-  }
-  .TextboxBackboard {
-    height: 900px;
-    width: 900px;
-  }
-  .blackboardTextTitle {
-    font-size: 25px;
-    left: 0%;
-    margin-top: 45%;
-
-    height: 50%;
-  }
-  .blackboardText {
-    font-size: 16px;
-    bottom: 0;
-    margin-bottom: -100%;
-    height: 50%;
+  .HistoryImage {
+    margin-top: 1%;
   }
 }
 @media only screen and (max-width: 600px) {
