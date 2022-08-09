@@ -23,6 +23,11 @@ import IMG_8855 from "./Pictures/IMG_8855.jpeg";
 import { Footer } from "./Footer";
 
 export class Home extends React.Component {
+  /**
+   * Constructor for Home
+   * @param {object} props Component props
+   * @param {width} this.state.width Determines which version of pictures need to be used
+   */
   constructor(props) {
     super(props);
     this.state = { width: 0, height: 0, imgWidth: 0, imgHeight: 0 };
@@ -65,7 +70,9 @@ export class Home extends React.Component {
         </>
       );
     } else if (this.state.width > 600) {
-      console.log(window.width);
+      /**
+       * This if checks the screen width and if its larger than 600, because it needs to determine the length of the ParallaxLayers
+       */
       return (
         <div className="hello">
           <Spring
@@ -617,7 +624,6 @@ export class Home extends React.Component {
         </Spring>
       );
     } else {
-      console.log("please");
       return (
         <Spring
           from={{ marginTop: 0 }}

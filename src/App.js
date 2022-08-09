@@ -9,19 +9,29 @@ import PrivacyPage from "./Pages/PrivacyPage";
 import { SplashScreen } from "./Pages/SplashScreen";
 
 export default class App extends React.Component {
+  /**
+   * Constructor for App
+   * @param {object} props Component props
+   * @param {width} this.state.timePassed Used for SplashScreen
+   */
   constructor(props) {
     super(props);
     this.state = {
       timePassed: false,
     };
   }
-
+  /**
+   * @param {setTimePassed} this.setTimePassed Runs timePassed after 4 seconds on Mount
+   */
   componentDidMount() {
     setTimeout(() => {
       this.setTimePassed();
     }, 4000);
   }
 
+  /**
+   * @param {setTimePassed} timePassed Sets timePassed after componentDidMount is run
+   */
   setTimePassed() {
     this.setState({ timePassed: true });
   }
