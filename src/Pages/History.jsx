@@ -57,8 +57,8 @@ export class History extends React.Component {
             </div>
           </div>
           <div class="filler"></div>
-          <Footer PageTracker={"History"} />
         </div>
+        <Footer PageTracker={"History"} />
       </div>
     );
   }

@@ -203,7 +203,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 47.5%;
+  max-width: 40%;
   margin-top: 2.5%;
 }
 .TextboxBlackboard {
@@ -214,7 +214,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 42.5%;
+  max-width: 35%;
   margin-top: 2.5%;
   margin-left: 2.5%;
 }
@@ -222,12 +222,12 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   display: block;
   float: left;
-  width: 92%;
+  width: 87.5%;
   height: 110%;
   top: 45%;
   transform: translate(-0%, -50%);
   margin-top: 2.5%;
-  margin-left: 4%;
+  margin-left: 10%;
 }
 .TextboxBackboardHistory {
   border-radius: 20px;
@@ -239,7 +239,7 @@ body::-webkit-scrollbar-thumb {
   top: 45%;
   transform: translate(-0%, -50%);
   margin-top: 2.5%;
-  margin-left: 2%;
+  margin-left: 7%;
   z-index: 0;
 }
 
@@ -326,12 +326,12 @@ li {
   border-radius: 20px;
   background: white;
   float: left;
-  margin-left: 2%;
+  margin-left: 7%;
   width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 47.5%;
+  max-width: 40%;
   margin-top: 2.5%;
 }
 .textboxLeft {
@@ -341,23 +341,23 @@ li {
   width: 47.5%;
   padding-bottom: 47.5%;
   top: 50%;
-  margin-left: 2%;
+  margin-left: 7%;
   height: 0;
-  max-width: 47.5%;
+  max-width: 40%;
   max-height: 47.5%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 .textboxLeftBottom {
   border-radius: 20px;
   display: block;
   float: left;
   width: 47.5%;
-  margin-top: 5%;
-  margin-left: 2%;
+  margin-top: 15%;
+  margin-left: 7%;
   padding-bottom: 47.5%;
   top: 50%;
   height: 0;
-  max-width: 47.5%;
+  max-width: 40%;
   max-height: 47.5%;
 }
 .imgRightBottom {
@@ -367,12 +367,12 @@ li {
   border-radius: 20px;
   background: white;
   float: left;
-  margin-right: 2%;
+  margin-right: 7%;
   width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 47.5%;
+  max-width: 40%;
   margin-top: 2.5%;
 }
 .textboxRightBottom {
@@ -380,12 +380,12 @@ li {
   display: block;
   float: right;
   width: 47.5%;
-  margin-top: 5%;
-  margin-right: 2%;
+  margin-top: 15%;
+  margin-right: 7%;
   padding-bottom: 47.5%;
   top: 50%;
   height: 0;
-  max-width: 47.5%;
+  max-width: 40%;
   max-height: 47.5%;
 }
 .imgLeftBottom {
@@ -396,11 +396,11 @@ li {
   background: white;
   float: left;
   width: 100%;
-  margin-left: 2%;
+  margin-left: 7%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 47.5%;
+  max-width: 40%;
   margin-top: 2.5%;
 }
 .textboxRight {
@@ -408,13 +408,13 @@ li {
   display: block;
   float: right;
   width: 47.5%;
-  margin-right: 2%;
+  margin-right: 7%;
   padding-bottom: 47.5%;
   top: 50%;
   height: 0;
-  max-width: 47.5%;
+  max-width: 40%;
   max-height: 47.5%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 .imgRight {
   object-fit: cover;
@@ -423,18 +423,18 @@ li {
   border-radius: 20px;
   background: white;
   float: right;
-  margin-right: 2%;
+  margin-right: 7%;
   width: 100%;
   height: auto;
   top: 50%;
   transform: translate(-0%, -50%);
-  max-width: 47.5%;
+  max-width: 40%;
   margin-top: 2.5%;
 }
 .imgMiddle {
   position: absolute;
   display: block;
-  margin-top: 5%;
+  margin-top: 15%;
   border-radius: 20px;
   background: white;
   float: right;
@@ -574,15 +574,15 @@ section {
   z-index: -1;
 }
 .HistoryTextbox {
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 .HistoryText {
   font-family: chalkboard;
   color: #e0e0e0;
   font-size: 11px;
   font-size: 1.9vw;
-  margin-left: 4%;
+  margin-left: 10%;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -652,8 +652,8 @@ section {
   bottom: 0rem;
 }
 .Policy {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   background-color: white;
 }
 
@@ -688,7 +688,7 @@ section {
   color: white;
   bottom: 10%;
   right: 0;
-  margin-right: 2%;
+  margin-right: 7%;
 }
 .PriBackgroud {
   background-color: white;
@@ -707,25 +707,25 @@ section {
     margin-bottom: 4x;
   }
   .imgLeft {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .textboxLeft {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .textboxLeftBottom {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .textboxRightBottom {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .imgRightBottom {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .textboxRight {
-    max-width: 47.5%;
+    max-width: 40%;
   }
   .imgRight {
-    max-width: 47.5%;
+    max-width: 40%;
   }
 }
 @media only screen and (min-width: 2000px) {
@@ -761,9 +761,9 @@ section {
   }
 
   .HistoryTextbox {
-    margin-left: 2%;
+    margin-left: 7%;
     margin-top: 20%;
-    margin-right: 2%;
+    margin-right: 7%;
   }
   .spacer {
     overflow-x: hidden;

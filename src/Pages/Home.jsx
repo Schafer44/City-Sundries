@@ -83,9 +83,12 @@ export class Home extends React.Component {
             {(props) => (
               <animated.div style={props}>
                 <div class="WhiteScreen"></div>
-                <Parallax pages={7} style={{ top: "0", left: "0" }}>
+                <Parallax
+                  pages={7}
+                  style={{ top: "0", left: "0", marginBottom: "5%" }}
+                >
                   <ParallaxLayer
-                    offset={0.99}
+                    offset={0.98}
                     speed={1}
                     style={{
                       zIndex: 5,
@@ -103,7 +106,7 @@ export class Home extends React.Component {
                   />
                   <ParallaxLayer
                     offset={0}
-                    speed={0}
+                    speed={0.5}
                     style={{
                       zIndex: 2,
                       display: "flex",
@@ -280,7 +283,7 @@ export class Home extends React.Component {
                     <img src={Services} className="imgRightBottom" alt="" />
                   </ParallaxLayer>
                   <ParallaxLayer
-                    sticky={{ start: 6, end: 6 }}
+                    sticky={{ start: 6, end: 6.5 }}
                     speed={1}
                     style={{
                       zIndex: 6,
@@ -321,13 +324,11 @@ export class Home extends React.Component {
                         <br></br>
                         Closed Sunday and Monday
                         <br></br>
-                        <br></br>
-                        Visit our Facebook page at facebook.com/citysundries/
                       </div>
                     </div>
                   </ParallaxLayer>
                   <ParallaxLayer
-                    sticky={{ start: 5.5, end: 6 }}
+                    sticky={{ start: 5.5, end: 6.5 }}
                     speed={1}
                     style={{
                       zIndex: 6,
@@ -340,7 +341,7 @@ export class Home extends React.Component {
                     <img src={IMG_8855} className="imgLeftBottom" alt="" />
                   </ParallaxLayer>
                   <ParallaxLayer
-                    sticky={{ start: 5.5, end: 6 }}
+                    sticky={{ start: 5.5, end: 6.5 }}
                     speed={1}
                     style={{
                       zIndex: 6,
@@ -349,9 +350,7 @@ export class Home extends React.Component {
                       alignItems: "center",
                       color: "white",
                     }}
-                  >
-                    <Footer PageTracker={"Home"} />
-                  </ParallaxLayer>
+                  ></ParallaxLayer>
                 </Parallax>
               </animated.div>
             )}
@@ -388,7 +387,7 @@ export class Home extends React.Component {
                 />
                 <ParallaxLayer
                   offset={0}
-                  speed={0}
+                  speed={0.5}
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -586,8 +585,6 @@ export class Home extends React.Component {
                       <br></br>
                       Closed Sunday and Monday
                       <br></br>
-                      <br></br>
-                      Visit our Facebook page at facebook.com/citysundries/
                     </div>
                   </div>
                 </ParallaxLayer>
@@ -615,9 +612,7 @@ export class Home extends React.Component {
                     alignItems: "center",
                     color: "white",
                   }}
-                >
-                  <Footer PageTracker={"Home"} />
-                </ParallaxLayer>
+                ></ParallaxLayer>
               </Parallax>
             </animated.div>
           )}
@@ -652,7 +647,7 @@ export class Home extends React.Component {
                 />
                 <ParallaxLayer
                   offset={0}
-                  speed={0}
+                  speed={0.5}
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -850,8 +845,6 @@ export class Home extends React.Component {
                       <br></br>
                       Closed Sunday and Monday
                       <br></br>
-                      <br></br>
-                      Visit our Facebook page at facebook.com/citysundries/
                     </div>
                   </div>
                 </ParallaxLayer>
@@ -879,9 +872,7 @@ export class Home extends React.Component {
                     alignItems: "center",
                     color: "white",
                   }}
-                >
-                  <Footer PageTracker={"Home"} />
-                </ParallaxLayer>
+                ></ParallaxLayer>
               </Parallax>
             </animated.div>
           )}
